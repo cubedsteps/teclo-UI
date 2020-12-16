@@ -37,12 +37,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
-}
 
-h3{
-  font-size: 28px;
-  font-weight: 700;
-  color: #010483;
 }
 
 /*--------------------------------------------------------------
@@ -729,7 +724,9 @@ section {
 }
 
 .about .icon-boxes h3 {
-  
+  font-size: 28px;
+  font-weight: 700;
+  color: #010483;
   margin-bottom: 15px;
 }
 
