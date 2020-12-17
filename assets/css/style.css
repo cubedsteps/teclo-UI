@@ -392,7 +392,6 @@ h3{
   top: 0;
   left: 0;
   position: fixed;
-  /* background: ; */
   overflow: hidden;
   display: none;
   transition: ease-in-out 0.2s;
@@ -407,9 +406,6 @@ h3{
   visibility: visible;
 }
 
-.mobile-nav-active .mobile-nav-toggle i {
-  /* color: #fff; */
-}
 
 /*--------------------------------------------------------------
 # Hero Section
