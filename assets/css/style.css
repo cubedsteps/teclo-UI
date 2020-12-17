@@ -885,12 +885,11 @@ section {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-.counts {
-  background: #f5f5ff;
+.popular-brands {
   padding: 70px 0 60px;
 }
 
-.counts .count-box {
+.popular-brands .count-box {
   padding: 30px 30px 25px 30px;
   width: 100%;
   position: relative;
@@ -898,7 +897,7 @@ section {
   background: #fff;
 }
 
-.counts .count-box i {
+.popular-brands .count-box i {
   position: absolute;
   top: -25px;
   left: 50%;
@@ -910,14 +909,14 @@ section {
   border-radius: 50px;
 }
 
-.counts .count-box span {
+.popular-brands .count-box span {
   font-size: 36px;
   display: block;
   font-weight: 600;
   color: #010483;
 }
 
-.counts .count-box p {
+.popular-brands .count-box p {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
