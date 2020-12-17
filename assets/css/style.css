@@ -639,25 +639,8 @@ section {
 }
 
 .section-title h2 {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0;
-  line-height: 1px;
-  margin: 0 0 5px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
 }
 
-.section-title h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #1acc8d;
-  margin: 4px 10px;
-}
 
 .section-title p {
   margin: 0;
@@ -921,6 +904,13 @@ section {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Stats
+--------------------------------------------------------------*/
+#stats{
+  background-color: #F0F0FA;
 }
 
 /*--------------------------------------------------------------
