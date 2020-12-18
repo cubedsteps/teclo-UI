@@ -23,6 +23,35 @@
   z-index: -1;
 }
 
+#register .register__main-container {
+  height: 125vh;
+  position: relative;
+}
+
+#register .register__main-container .main-container__left-column {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100%;
+  background: url("/assets/img/hero-bg.jpg");
+  z-index: -2;
+}
+
+#register .register__main-container .main-container__left-column img {
+  width: 400px;
+}
+
+#register .register__main-container .main-container__left-column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  z-index: -1;
+}
+
 .display-block {
   display: block;
 }
@@ -51,7 +80,7 @@ black
   color: #0007AC;
 }
 
-.bg-blue, #login .login__main-container .main-container__left-column::before, .form-container--button {
+.bg-blue, #login .login__main-container .main-container__left-column::before, #register .register__main-container .main-container__left-column::before, .form-container--button {
   background-color: #0007AC;
 }
 
