@@ -23,6 +23,12 @@
   z-index: -1;
 }
 
+@media only screen and (max-width: 768px) {
+  #login .login__main-container .main-container__left-column {
+    display: none !important;
+  }
+}
+
 #register .register__main-container {
   height: 125vh;
   position: relative;
@@ -50,6 +56,12 @@
   width: 100%;
   opacity: 0.9;
   z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  #register .register__main-container .main-container__left-column {
+    display: none !important;
+  }
 }
 
 .display-block {

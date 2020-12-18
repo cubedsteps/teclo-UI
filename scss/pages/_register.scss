@@ -26,3 +26,13 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px){
+    #register{
+        .register__main-container{
+            .main-container__left-column{
+                display:none !important;
+            }  
+        } 
+    }
+}
