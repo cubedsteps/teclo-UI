@@ -25,7 +25,15 @@
 }
 
 @media only screen and (max-width: 768px){
+    #header{
+        .logo{
+            a{
+                color: black;
+            }
+        }
+    }
     #login{
+        padding-top: 50px;
         .login__main-container{
             .main-container__left-column{
                 display:none !important;
