@@ -1,3 +1,25 @@
-.form-container--input{
-    border: 1px solid black;
+#login{
+    .login__main-container{
+        height: 100vh;
+        .main-container__left-column{
+            height: 100%;
+            background: url("/assets/img/hero-bg.jpg");
+            z-index: -2;
+
+            img{
+                width: 400px;
+            }
+        }
+        .main-container__left-column::before{
+            @extend .bg-blue;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.9;
+            z-index: -1;
+        }
+    }
 }

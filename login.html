@@ -29,10 +29,12 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/main.css">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="css/main.css">
+
 
 
   <!-- =======================================================
@@ -47,35 +49,47 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1><a href="index.html" class=""><span>Telcohub</span></a></h1>
+        <h1><a href="index.html" class="white"><span>Telcohub</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
     </div>
   </header><!-- End Header -->
 
-  <div id="login" class="login__main-container container-fluid">
-    <div class="row">
-        <div class="col-6 main-container__left-column"></div>
+  <div id="login" class="container-fluid">
+    <div class="row login__main-container align-items-center">
+        <div class="col-6 main-container__left-column bg-blue d-flex justify-content-center align-items-center">
+            <img src="/assets/img/hero-img.png" alt="">
+        </div>
         <div class="col-6 main-container__right-column">
-            <h1 class="right-column__heading">
-                <b>Login</b>
-            </h1>
-            <form action="#" class="conatiner-fluid right-column__form-container">
-                <div class="row">
-                    <div class="col-12 form-container__email">
-                        <p>Email</p>
-                        <input type="email" class="form-control form-container--input" placeholder="Email">
-                    </div>
-                    <div class="col-12 form-container__password">
-                        <p>Password</p>
-                        <input type="password" class="form-control form-container--input" placeholder="Your password">
-                    </div>
-                </div>                
-            </form>
+            <div class="container">
+                <h1 class="right-column__heading">
+                    <b>Login</b>
+                </h1>
+                <form action="#" class="conatiner-fluid right-column__form-container">
+                    <div class="row">
+                        <div class="col-12 form-container__email m-top-30">
+                            <p class="form-container--label m-btm-5">Email</p>
+                            <input type="email" class="form-control form-container--input-text" placeholder="Email" required>
+                        </div>
+                        <div class="col-12 form-container__password m-top-15">
+                            <p class="form-container--label m-btm-5">Password</p>
+                            <input type="password" class="form-control form-container--input-text" placeholder="Your password" required>
+                        </div>
+                        <div class="col-12 form-container__password m-top-15 d-flex align-items-center">
+                            <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                            <p class="form-container--label m-left-15 m-btm-0">Keep me logged in</p>
+                        </div>
+                        <div class="col-12 form-container__submit m-top-15">
+                            <button type="submit" class="btn form-container--button white">Login</button>
+                        </div>
+                    </div>               
+                </form>
+                <p class="m-top-15">Don't have an accout? <a href="register.html" class="blue"><b>Signup.</b></a></p>
+            </div>
         </div>
     </div>
   </div>

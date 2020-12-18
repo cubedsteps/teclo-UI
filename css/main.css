@@ -1,5 +1,26 @@
-.form-container--input {
-  border: 1px solid black;
+#login .login__main-container {
+  height: 100vh;
+}
+
+#login .login__main-container .main-container__left-column {
+  height: 100%;
+  background: url("/assets/img/hero-bg.jpg");
+  z-index: -2;
+}
+
+#login .login__main-container .main-container__left-column img {
+  width: 400px;
+}
+
+#login .login__main-container .main-container__left-column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  z-index: -1;
 }
 
 .display-block {
@@ -8,5 +29,70 @@
 
 .display-none {
   display: none;
+}
+
+/*-----------
+blue
+#0007AC
+
+light blue
+#EBF7FE
+
+black
+ #0D0D0D
+
+
+ ------*/
+.white, .form-container--button:hover {
+  color: white;
+}
+
+.blue {
+  color: #0007AC;
+}
+
+.bg-blue, #login .login__main-container .main-container__left-column::before, .form-container--button {
+  background-color: #0007AC;
+}
+
+.m-top-15 {
+  margin-top: 15px;
+}
+
+.m-top-30 {
+  margin-top: 30px;
+}
+
+.m-btm-0 {
+  margin-bottom: 0px;
+}
+
+.m-btm-5 {
+  margin-bottom: 5px;
+}
+
+.m-left-15 {
+  margin-left: 15px;
+}
+
+.form-container--input-text {
+  border: 1px solid #d1d1d1;
+  height: 50px;
+  background-color: #fafafa;
+}
+
+.form-container--input-checkbox {
+  border: 1px solid #d1d1d1;
+  height: 20px;
+  width: 20px;
+  background-color: #fafafa;
+}
+
+.form-container--button {
+  padding: 10px 25px;
+}
+
+.form-container--button:hover {
+  background-color: #000470;
 }
 /*# sourceMappingURL=main.css.map */

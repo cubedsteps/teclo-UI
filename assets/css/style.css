@@ -8,30 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/*-----------
-blue
-#0007AC
 
-light blue
-#EBF7FE
-
-black
- #0D0D0D
-
-
- ------*/
-
- .white{
-   color: white;
- }
-
- .m-top-15{
-   margin-top: 15px;
- }
-
- .m-top-30{
-   margin-top: 30px;
- }
 
  body {
   font-family: "Open Sans", sans-serif;
