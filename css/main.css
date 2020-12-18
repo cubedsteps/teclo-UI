@@ -1,3 +1,7 @@
+.form-container--input {
+  border: 1px solid black;
+}
+
 .display-block {
   display: block;
 }
