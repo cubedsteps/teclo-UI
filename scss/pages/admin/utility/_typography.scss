@@ -1,0 +1,45 @@
+$admin-font: 'Open Sans', sans-serif;
+
+
+#admin{
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+    h6{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .small{
+        font-size: 12px;
+    }
+
+    h4,h5,h6{
+        font-weight: 400;
+    }
+
+    p, .small{
+        font-weight: 300;
+    }
+    font-family: $admin-font;
+}

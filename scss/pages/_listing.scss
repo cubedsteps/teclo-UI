@@ -18,14 +18,11 @@
                 position: sticky;
                 top: 60px;
                 overflow-y: scroll;
-                // -webkit-box-shadow: 5px 0px 26px 0px rgba(50, 50, 50, 0.1);
-                // -moz-box-shadow:    5px 0px 26px 0px rgba(50, 50, 50, 0.1);
-                // box-shadow:         5px 0px 26px 0px rgba(50, 50, 50, 0.1);
                 border-right: 1px solid rgba(75, 75, 75, 0.1);
 
                 .select2-selection__choice{
                     font-size: 12px;
-                    padding: 5px;
+                    padding: 5px 20px 5px 10px;
                     border: none;
                     padding-right: 20px;
                     position: relative;
@@ -37,7 +34,7 @@
                         border-right: none;
                     }
 
-                    .select2-selection__choice__remove:hover,.select2-selection__choice__remove:focus{
+                    &:hover,&:focus{
                         background-color: none;
                     }
                 }
