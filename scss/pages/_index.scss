@@ -1,0 +1,14 @@
+.repair-form{
+    .select2-selection {
+        height: 70px !important;
+      }
+    .select2-selection__choice{
+        font-size: 12px;
+        padding: 5px !important;
+        border: none !important;
+    
+        .select2-selection__choice__remove{
+            color: black !important;
+        }
+    }
+}

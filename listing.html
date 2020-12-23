@@ -35,6 +35,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+  <!-- select2 -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+  
+
+  <!-- bootstrap slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css" integrity="sha512-3q8fi8M0VS+X/3n64Ndpp6Bit7oXSiyCnzmlx6IDBLGlY5euFySyJ46RUlqIVs0DPCGOypqP8IRk/EyPvU28mQ==" crossorigin="anonymous" />
+
 
   <!-- =======================================================
   * Template Name: Bootslander - v2.3.0
@@ -47,7 +54,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+  <header id="header" class="header-listing fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
@@ -90,358 +97,391 @@
   </header><!-- End Header -->
 
   <div id="shop-listings">
-      <div class="container listings__main-container">
-          <h1 class="m-btm-30"><b>Listing</b></h1>
-          <div class="row main-container__listings-row">
-              <div class="col-md-4 listings-row__listing-box m-btm-30">
-                  <div class="listing-box container-fluid">
-                      <div class="listing-box__bg-image-all-tags row" style="background-image:url('/assets/img/australia/place-2.jpg'); background-size:cover;">
-                        <div class="all-tags col-12 d-flex flex-wrap">
-                            <div>
-                                <p class="">Screen</p>
-                            </div>
-                            <div>
-                                <p>Battery</p>
-                            </div>
+      <div class="container-fluid listings__main-container">
+          <div class="row">
+            <div class="col-md-3 filter-container">
+                <div class="filter__main-container filter__main-container--height pad-top-20 container-fluid">
+                    <div class="row">
+                        <div class="col-12">  
+                            <div class="d-flex justify-content-between">
+                                <h5><b>Filter</b></h5>
+                                <i class="fas fa-times display-none filter-cross-btn"></i>
+                            </div>                          
+                            <form class="form-container m-top-15">
+                                <div class="form-group">
+                                    <p class="m-btm-5"><small><b>Brands</b></small></p>
+                                    <div class="row">
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Apple</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Apple iPad</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Apple watch</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Samsung</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Samsung Tab</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Microsoft phone</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Microsoft Surface</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Oppo</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Oneplus</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Huawei</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Google Pixel</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Nokia</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Xiaomi</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>HTC</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Motorola</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>LG</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Asus</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Gionee</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>ZTE</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Lenovo</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Alcatel</small></p>
+                                        </div>
+                                        <div class="col-6 d-flex m-btm-5 align-items-center">
+                                          <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                                          <p class="m-left-15"><small>Vivo</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <p class="m-btm-5"><small><b>Location</b></small></p>
+                                  <input type="text" class="form-container--input-text form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter location">
+                                </div>
+                                <div class="form-group">
+                                    <p class="m-btm-5"><small><b>Issues</b></small></p>
+                                    <select multiple="multiple" id="issue-list">
+                                      <option value="1" data-bg="#FFC1C1">Display</option>
+                                      <option value="2" data-bg="#C1E1FF">Water Damage</option>
+                                      <option value="3"data-bg="#FFD8C1">Charging port</option>
+                                      <option value="4" data-bg="#FFC1EA">Battery</option>
+                                      <option value="5" data-bg="#EBFFC1">Software</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                  <p class="m-btm-5"><small><b>Price range:</b></small></p>
+                                  <input 
+                                  id="price-range" type="text" class="span2" 
+                                  value="" 
+                                  data-slider-min="10" data-slider-max="1000" 
+                                  data-slider-step="5" data-slider-value="[250,450]"/>
+  
+                                </div>
+                                  
+                                <button type="submit" class="btn form-container--button white m-btm-30">Search</button>
+                              </form>
                         </div>
-                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 all-listings pad-top-20">
+            <div class="row main-container__heading-filter justify-content-between align-items-center">
+                <div class="col-4 m-btm-30">
+                    <h4 class="main-container__heading"><b>Listing</b></h4>
+                </div>
+                <div class="col-3 d-flex align-items-top main-container__filter justify-content-end display-none">
+                    <i class="fas fa-filter blue"></i>
+                    <h6 class="m-btm-30 m-left-5"><b>Filter</b></h6>
+                </div>
+            </div>
+            <div class="row main-container__listings-row">
+                <div class="col-md-6 listings-row__listing-box m-btm-30 " data-aos="fade-up" data-aos-delay="150">
+                    <div class="listing-box container-fluid">
+                        <div class="listing-box__bg-image-all-tags row" style="background-color: rgb(97, 179, 255); background-size:cover; ">
+                        <div class="all-tags col-12 d-flex flex-wrap">
+                          <div class="tag battery">
+                            <i class="fas fa-car-battery"></i>
+                            <div class="tool-tip tool-tip-battery">
+                              <p><small>Battery</small></p>
+                            </div>
+                          </div>
+                          <div class="tag water">
+                            <i class="fas fa-tint"></i>
+                            <div class="tool-tip tool-tip-water">
+                              <p><small>Water damage</small></p>
+                            </div>
+                          </div>
+                          <div class="tag software">
+                            <i class="fas fa-virus"></i>
+                            <div class="tool-tip tool-tip-software">
+                              <p><small>Software issues</small></p>
+                            </div>
+                          </div>
+                          <div class="more-tag">
+                              <p class="white"><small>+10 more</small></p>
+                          </div>
+                        </div>
+                        </div>
 
-                      <div class="row listing-box__profile-picture-username-rating-location-description">
+                        <div class="row listing-box__profile-picture-username-mail-location-description">
                         <div class="col-12 listing-box__profile-picture m-btm-15">
-                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/team/team-1.jpg'); background-size:cover;">
+                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/wrench.jpg'); background-size:cover; background-position:center">
 
                             </div>                            
                         </div>
                         <div class="col-12 listing-box__username">
-                            <h5><b>Sohail Dangol</b></h5>
-                        </div>                        
-                        <div class="col-12 listing-box__location m-btm-5">
-                            <p>Melbourne</p>
-                        </div>
-                        <div class="col-12 listing-box__rating m-btm-15">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
+                            <h5><b>Aus Repairer Court</b></h5>
+                        </div>   
+                        <div class="col-12 listing-box__mail-location d-flex align-items-center m-btm-15 ">                                                
+                            <div class="listing-box__location d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p class="m-left-5"><small>Melbourne</small></p>
+                            </div>
+                            <div class="listing-box__mail  m-left-15  d-flex align-items-center">
+                                <i class="fas fa-envelope"></i>
+                                <p class="m-left-5"><small>repairerjohn@gmail.com</small></p>
+                            </div>
+                        </div> 
                         <div class="col-12 listing-box__description m-btm-15">
-                            <p>Octopus Deploy simplifies even the most complex deployments & IT ops automation tasks. Get started free.</p>
+                            <div class="d-flex align-items-center flex-wrap">
+                              <p class="text-muted"><small>Apple</small></p>
+                              <p class="text-muted"><small>Samsung</small></p>
+                              <p class="text-muted"><small>Oppo</small></p>
+                              <p class="text-muted"><small>Sony</small></p>
+                              <p class="text-muted"><small>+10 more</small></p>
+                            </div>
                         </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 listings-row__listing-box m-btm-30">
-                  <div class="listing-box container-fluid">
-                      <div class="listing-box__bg-image-all-tags row" style="background-image:url('/assets/img/australia/place-2.jpg'); background-size:cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 listings-row__listing-box m-btm-30 " data-aos="fade-up" data-aos-delay="150">
+                    <div class="listing-box container-fluid">
+                        <div class="listing-box__bg-image-all-tags row" style="background-color: rgb(255, 97, 189); background-size:cover; ">
                         <div class="all-tags col-12 d-flex flex-wrap">
-                            <div>
-                                <p class="">Screen</p>
+                          <div class="tag battery">
+                            <i class="fas fa-car-battery"></i>
+                            <div class="tool-tip tool-tip-battery">
+                              <p><small>Battery</small></p>
                             </div>
-                            <div>
-                                <p>Battery</p>
+                          </div>
+                          <div class="tag water">
+                            <i class="fas fa-tint"></i>
+                            <div class="tool-tip tool-tip-water">
+                              <p><small>Water damage</small></p>
                             </div>
-                            <div>
-                                <p class="">Screen</p>
+                          </div>
+                          <div class="tag software">
+                            <i class="fas fa-virus"></i>
+                            <div class="tool-tip tool-tip-software">
+                              <p><small>Software issues</small></p>
                             </div>
-                            <div>
-                                <p>Battery</p>
-                            </div>
+                          </div>
+                          <div class="more-tag">
+                              <p class="white"><small>+10 more</small></p>
+                          </div>
                         </div>
-                      </div>
+                        </div>
 
-                      <div class="row listing-box__profile-picture-username-rating-location-description">
+                        <div class="row listing-box__profile-picture-username-mail-location-description">
                         <div class="col-12 listing-box__profile-picture m-btm-15">
-                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/team/team-1.jpg'); background-size:cover;">
+                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/wrench.jpg'); background-size:cover; background-position:center">
 
                             </div>                            
                         </div>
                         <div class="col-12 listing-box__username">
-                            <h5><b>Sohail Dangol</b></h5>
-                        </div>                        
-                        <div class="col-12 listing-box__location m-btm-5">
-                            <p>Melbourne</p>
-                        </div>
-                        <div class="col-12 listing-box__rating m-btm-15">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
+                            <h5><b>Aus Repairer Court</b></h5>
+                        </div>   
+                        <div class="col-12 listing-box__mail-location d-flex align-items-center m-btm-15 ">                                                
+                            <div class="listing-box__location d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p class="m-left-5"><small>Melbourne</small></p>
+                            </div>
+                            <div class="listing-box__mail  m-left-15  d-flex align-items-center">
+                                <i class="fas fa-envelope"></i>
+                                <p class="m-left-5"><small>repairerjohn@gmail.com</small></p>
+                            </div>
+                        </div> 
                         <div class="col-12 listing-box__description m-btm-15">
-                            <p>Octopus Deploy simplifies even the most complex deployments & IT ops automation tasks. Get started free.</p>
+                            <div class="d-flex align-items-center flex-wrap">
+                              <p class="text-muted"><small>Apple</small></p>
+                              <p class="text-muted"><small>Samsung</small></p>
+                              <p class="text-muted"><small>Oppo</small></p>
+                              <p class="text-muted"><small>Sony</small></p>
+                              <p class="text-muted"><small>+10 more</small></p>
+                            </div>
                         </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 listings-row__listing-box m-btm-30">
-                  <div class="listing-box container-fluid">
-                      <div class="listing-box__bg-image-all-tags row" style="background-image:url('/assets/img/australia/place-2.jpg'); background-size:cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 listings-row__listing-box m-btm-30 " data-aos="fade-up" data-aos-delay="150">
+                    <div class="listing-box container-fluid">
+                        <div class="listing-box__bg-image-all-tags row" style="background-color: rgb(255, 97, 97); background-size:cover; ">
                         <div class="all-tags col-12 d-flex flex-wrap">
-                            <div>
-                                <p class="">Screen</p>
+                          <div class="tag battery">
+                            <i class="fas fa-car-battery"></i>
+                            <div class="tool-tip tool-tip-battery">
+                              <p><small>Battery</small></p>
                             </div>
-                            <div>
-                                <p>Battery</p>
+                          </div>
+                          <div class="tag water">
+                            <i class="fas fa-tint"></i>
+                            <div class="tool-tip tool-tip-water">
+                              <p><small>Water damage</small></p>
                             </div>
+                          </div>
+                          <div class="tag software">
+                            <i class="fas fa-virus"></i>
+                            <div class="tool-tip tool-tip-software">
+                              <p><small>Software issues</small></p>
+                            </div>
+                          </div>
+                          <div class="more-tag">
+                              <p class="white"><small>+10 more</small></p>
+                          </div>
                         </div>
-                      </div>
+                        </div>
 
-                      <div class="row listing-box__profile-picture-username-rating-location-description">
+                        <div class="row listing-box__profile-picture-username-mail-location-description">
                         <div class="col-12 listing-box__profile-picture m-btm-15">
-                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/team/team-1.jpg'); background-size:cover;">
+                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/wrench.jpg'); background-size:cover; background-position:center">
 
                             </div>                            
                         </div>
                         <div class="col-12 listing-box__username">
-                            <h5><b>Sohail Dangol</b></h5>
-                        </div>                        
-                        <div class="col-12 listing-box__location m-btm-5">
-                            <p>Melbourne</p>
-                        </div>
-                        <div class="col-12 listing-box__rating m-btm-15">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
+                            <h5><b>Aus Repairer Court</b></h5>
+                        </div>   
+                        <div class="col-12 listing-box__mail-location d-flex align-items-center m-btm-15 ">                                                
+                            <div class="listing-box__location d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p class="m-left-5"><small>Melbourne</small></p>
+                            </div>
+                            <div class="listing-box__mail  m-left-15  d-flex align-items-center">
+                                <i class="fas fa-envelope"></i>
+                                <p class="m-left-5"><small>repairerjohn@gmail.com</small></p>
+                            </div>
+                        </div> 
                         <div class="col-12 listing-box__description m-btm-15">
-                            <p>Octopus Deploy simplifies even the most complex deployments & IT ops automation tasks. Get started free.</p>
+                            <div class="d-flex align-items-center flex-wrap">
+                              <p class="text-muted"><small>Apple</small></p>
+                              <p class="text-muted"><small>Samsung</small></p>
+                              <p class="text-muted"><small>Oppo</small></p>
+                              <p class="text-muted"><small>Sony</small></p>
+                              <p class="text-muted"><small>+10 more</small></p>
+                            </div>
                         </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 listings-row__listing-box m-btm-30">
-                  <div class="listing-box container-fluid">
-                      <div class="listing-box__bg-image-all-tags row" style="background-image:url('/assets/img/australia/place-2.jpg'); background-size:cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 listings-row__listing-box m-btm-30 " data-aos="fade-up" data-aos-delay="150">
+                    <div class="listing-box container-fluid">
+                        <div class="listing-box__bg-image-all-tags row" style="background-color: rgb(100, 97, 255); background-size:cover; ">
                         <div class="all-tags col-12 d-flex flex-wrap">
-                            <div>
-                                <p class="">Screen</p>
+                          <div class="tag battery">
+                            <i class="fas fa-car-battery"></i>
+                            <div class="tool-tip tool-tip-battery">
+                              <p><small>Battery</small></p>
                             </div>
-                            <div>
-                                <p>Battery</p>
+                          </div>
+                          <div class="tag water">
+                            <i class="fas fa-tint"></i>
+                            <div class="tool-tip tool-tip-water">
+                              <p><small>Water damage</small></p>
                             </div>
+                          </div>
+                          <div class="tag software">
+                            <i class="fas fa-virus"></i>
+                            <div class="tool-tip tool-tip-software">
+                              <p><small>Software issues</small></p>
+                            </div>
+                          </div>
+                          <div class="more-tag">
+                              <p class="white"><small>+10 more</small></p>
+                          </div>
                         </div>
-                      </div>
+                        </div>
 
-                      <div class="row listing-box__profile-picture-username-rating-location-description">
+                        <div class="row listing-box__profile-picture-username-mail-location-description">
                         <div class="col-12 listing-box__profile-picture m-btm-15">
-                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/team/team-1.jpg'); background-size:cover;">
+                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/wrench.jpg'); background-size:cover; background-position:center">
 
                             </div>                            
                         </div>
                         <div class="col-12 listing-box__username">
-                            <h5><b>Sohail Dangol</b></h5>
-                        </div>                        
-                        <div class="col-12 listing-box__location m-btm-5">
-                            <p>Melbourne</p>
-                        </div>
-                        <div class="col-12 listing-box__rating m-btm-15">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
+                            <h5><b>Aus Repairer Court</b></h5>
+                        </div>   
+                        <div class="col-12 listing-box__mail-location d-flex align-items-center m-btm-15 ">                                                
+                            <div class="listing-box__location d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p class="m-left-5"><small>Melbourne</small></p>
+                            </div>
+                            <div class="listing-box__mail  m-left-15  d-flex align-items-center">
+                                <i class="fas fa-envelope"></i>
+                                <p class="m-left-5"><small>repairerjohn@gmail.com</small></p>
+                            </div>
+                        </div> 
                         <div class="col-12 listing-box__description m-btm-15">
-                            <p>Octopus Deploy simplifies even the most complex deployments & IT ops automation tasks. Get started free.</p>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 listings-row__listing-box m-btm-30">
-                  <div class="listing-box container-fluid">
-                      <div class="listing-box__bg-image-all-tags row" style="background-image:url('/assets/img/australia/place-2.jpg'); background-size:cover;">
-                        <div class="all-tags col-12 d-flex flex-wrap">
-                            <div>
-                                <p class="">Screen</p>
-                            </div>
-                            <div>
-                                <p>Battery</p>
+                            <div class="d-flex align-items-center flex-wrap">
+                              <p class="text-muted"><small>Apple</small></p>
+                              <p class="text-muted"><small>Samsung</small></p>
+                              <p class="text-muted"><small>Oppo</small></p>
+                              <p class="text-muted"><small>Sony</small></p>
+                              <p class="text-muted"><small>+10 more</small></p>
                             </div>
                         </div>
-                      </div>
-
-                      <div class="row listing-box__profile-picture-username-rating-location-description">
-                        <div class="col-12 listing-box__profile-picture m-btm-15">
-                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/team/team-1.jpg'); background-size:cover;">
-
-                            </div>                            
                         </div>
-                        <div class="col-12 listing-box__username">
-                            <h5><b>Sohail Dangol</b></h5>
-                        </div>                        
-                        <div class="col-12 listing-box__location m-btm-5">
-                            <p>Melbourne</p>
-                        </div>
-                        <div class="col-12 listing-box__rating m-btm-15">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="col-12 listing-box__description m-btm-15">
-                            <p>Octopus Deploy simplifies even the most complex deployments & IT ops automation tasks. Get started free.</p>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 listings-row__listing-box m-btm-30">
-                  <div class="listing-box container-fluid">
-                      <div class="listing-box__bg-image-all-tags row" style="background-image:url('/assets/img/australia/place-2.jpg'); background-size:cover;">
-                        <div class="all-tags col-12 d-flex flex-wrap">
-                            <div>
-                                <p class="">Screen</p>
-                            </div>
-                            <div>
-                                <p>Battery</p>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="row listing-box__profile-picture-username-rating-location-description">
-                        <div class="col-12 listing-box__profile-picture m-btm-15">
-                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/team/team-1.jpg'); background-size:cover;">
-
-                            </div>                            
-                        </div>
-                        <div class="col-12 listing-box__username">
-                            <h5><b>Sohail Dangol</b></h5>
-                        </div>                        
-                        <div class="col-12 listing-box__location m-btm-5">
-                            <p>Melbourne</p>
-                        </div>
-                        <div class="col-12 listing-box__rating m-btm-15">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="col-12 listing-box__description m-btm-15">
-                            <p>Octopus Deploy simplifies even the most complex deployments & IT ops automation tasks. Get started free.</p>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 listings-row__listing-box m-btm-30">
-                  <div class="listing-box container-fluid">
-                      <div class="listing-box__bg-image-all-tags row" style="background-image:url('/assets/img/australia/place-2.jpg'); background-size:cover;">
-                        <div class="all-tags col-12 d-flex flex-wrap">
-                            <div>
-                                <p class="">Screen</p>
-                            </div>
-                            <div>
-                                <p>Battery</p>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="row listing-box__profile-picture-username-rating-location-description">
-                        <div class="col-12 listing-box__profile-picture m-btm-15">
-                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/team/team-1.jpg'); background-size:cover;">
-
-                            </div>                            
-                        </div>
-                        <div class="col-12 listing-box__username">
-                            <h5><b>Sohail Dangol</b></h5>
-                        </div>                        
-                        <div class="col-12 listing-box__location m-btm-5">
-                            <p>Melbourne</p>
-                        </div>
-                        <div class="col-12 listing-box__rating m-btm-15">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="col-12 listing-box__description m-btm-15">
-                            <p>Octopus Deploy simplifies even the most complex deployments & IT ops automation tasks. Get started free.</p>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 listings-row__listing-box m-btm-30">
-                  <div class="listing-box container-fluid">
-                      <div class="listing-box__bg-image-all-tags row" style="background-image:url('/assets/img/australia/place-2.jpg'); background-size:cover;">
-                        <div class="all-tags col-12 d-flex flex-wrap">
-                            <div>
-                                <p class="">Screen</p>
-                            </div>
-                            <div>
-                                <p>Battery</p>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="row listing-box__profile-picture-username-rating-location-description">
-                        <div class="col-12 listing-box__profile-picture m-btm-15">
-                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/team/team-1.jpg'); background-size:cover;">
-
-                            </div>                            
-                        </div>
-                        <div class="col-12 listing-box__username">
-                            <h5><b>Sohail Dangol</b></h5>
-                        </div>                        
-                        <div class="col-12 listing-box__location m-btm-5">
-                            <p>Melbourne</p>
-                        </div>
-                        <div class="col-12 listing-box__rating m-btm-15">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="col-12 listing-box__description m-btm-15">
-                            <p>Octopus Deploy simplifies even the most complex deployments & IT ops automation tasks. Get started free.</p>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 listings-row__listing-box m-btm-30">
-                  <div class="listing-box container-fluid">
-                      <div class="listing-box__bg-image-all-tags row" style="background-image:url('/assets/img/australia/place-2.jpg'); background-size:cover;">
-                        <div class="all-tags col-12 d-flex flex-wrap">
-                            <div>
-                                <p class="">Screen</p>
-                            </div>
-                            <div>
-                                <p>Battery</p>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="row listing-box__profile-picture-username-rating-location-description">
-                        <div class="col-12 listing-box__profile-picture m-btm-15">
-                            <div class="profile-picture bg-blue" style="background-image:url('/assets/img/team/team-1.jpg'); background-size:cover;">
-
-                            </div>                            
-                        </div>
-                        <div class="col-12 listing-box__username">
-                            <h5><b>Sohail Dangol</b></h5>
-                        </div>                        
-                        <div class="col-12 listing-box__location m-btm-5">
-                            <p>Melbourne</p>
-                        </div>
-                        <div class="col-12 listing-box__rating m-btm-15">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="col-12 listing-box__description m-btm-15">
-                            <p>Octopus Deploy simplifies even the most complex deployments & IT ops automation tasks. Get started free.</p>
-                        </div>
-                      </div>
-                  </div>
-              </div>
+                    </div>
+                </div>
+            </div>
+            </div>
           </div>
+          
       </div>
   </div>
 
@@ -520,6 +560,15 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/animation.js"></script>
 
+  <!-- select2 js file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js" integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g==" crossorigin="anonymous"></script>
+<script src="/assets/js/filter-select.js"></script>
+
+<!-- bootstrap slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous"></script>
+
+  <script src="/assets/js/slider.js"></script>
+  <script src="/assets/js/responsive.js"></script>
 </body>
 
 </html>
