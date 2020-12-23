@@ -19,7 +19,3 @@ if( screen.width <= 768){
         $('.filter-container').toggleClass('display-none')
     })
 }
-
-// $('.tag').hover(function(){
-//     $('.tag').addClass('hover-tag');
-// })
