@@ -1568,6 +1568,7 @@ section {
   border: 0;
   padding: 4px;
   width: calc(100% - 110px);
+  outline: none;
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"] {
