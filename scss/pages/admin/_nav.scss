@@ -1,0 +1,57 @@
+#admin{
+    #nav{
+        @extend .bg-blue;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+
+        .nav__logo{
+            @extend .m-top-15;
+        }
+
+        .nav__item{
+            @extend .m-top-50;
+            position: relative;
+            .total-quotations{
+                background-color: red;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                position: absolute;
+                z-index: 1;
+                top: -10px;                
+            }
+        }
+
+        .nav__item, .nav__logo{
+            @extend .white;
+        }
+
+        .nav__item{
+            i,p{
+                @extend .faded-blue;
+            }
+            i{
+                font-size: 30px;
+            }
+        }
+        .nav-active{
+            i,p{
+                @extend .blue;
+            }
+
+            p{
+                font-weight: bold;
+            }
+        }
+
+        .nav-active::before{
+            content: '';
+            padding: 35px;
+            position: absolute;
+            width: 100%;
+            border-radius: 15px;
+            @extend .bg-faded-blue;
+        }
+    }
+}

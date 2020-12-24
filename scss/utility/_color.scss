@@ -11,20 +11,38 @@ black
 
  ------*/
 
+$primary-blue: #0F14A2;
+$primary-faded-blue: hsl(238, 83%, 95%);
+$primary-white: hsl(0, 0%, 98%);
+$primary-grey: rgb(202, 202, 202);
+$primary-green: #1acc8d;
+
 .white{
-    color: white;
+    color: $primary-white;
 }
 
 .blue{
-    color: #0007AC;
+    color: $primary-blue !important;
+}
+
+.grey{
+    color: $primary-grey;
+}
+
+.faded-blue{
+    color: $primary-faded-blue;
+}
+
+.bg-faded-blue{
+    background-color: $primary-faded-blue;
 }
 
 .bg-blue{
-      background-color:#0007AC;
+      background-color:$primary-blue;
 }
 
 .bg-green{
-    background-color: #1acc8d;
+    background-color: $primary-green;
 }
 
 .display{
