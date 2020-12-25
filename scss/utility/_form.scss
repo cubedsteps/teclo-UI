@@ -3,6 +3,7 @@
     height: 50px !important;
     background-color: hsl(0, 0%, 98%) !important;
     width: 100% !important;
+    border-radius: 5px;
 }
 
 .form-container--input-checkbox{
@@ -10,6 +11,7 @@
     height: 20px;
     width: 20px;
     background-color: hsl(0, 0%, 98%);
+    border-radius: 5px;
 }
 
 .form-container--select{
@@ -17,14 +19,17 @@
     height: 50px !important;
     background-color: hsl(0, 0%, 98%) !important;
     width: 100% !important;
+    border-radius: 5px;
 }
 
 .form-container--button{
     padding: 10px 25px;
     @extend .bg-blue;
+    border-radius: 5px;
+    @extend .white;
+    border: none;
 }
 
 .form-container--button:hover{
     background-color:#000470;
-    @extend .white;
 }
