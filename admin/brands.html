@@ -17,13 +17,14 @@
         <div class="row">
             <div id="nav" class="col-md-3 col-0">
                 <div class="container" style="position: relative;">                    
-                    <div class="row nav__logo">
-                        <h2 class="bold col-12">Telcohub</h2>
+                    <div class="nav__logo-burger d-flex justify-content-between align-items-center">
+                        <h2 class="bold">Telcohub</h2>
+                        <i class="fas fa-bars nav__burger"></i>
                     </div>
 
                     <div class="row nav__item align-items-center">
                         <i class="fas fa-th-large col-3"></i>
-                        <p class="col-9 ">Dashboard</p>
+                        <p class="col-9">Dashboard</p>
                     </div>
 
                     <div class="row nav__item align-items-center">
@@ -53,14 +54,19 @@
             <div id="body" class="col-md-9 col-12 m-btm-30">
                 <div class="row">
                     <div id="header" class="col-12">
-                        <div class="container-fluid d-flex align-items-center justify-content-end m-top-15">
-                            <div class="header__notification m-right-30">
-                                <i class="fas fa-bell"></i>
+                        <div class="container-fluid d-flex align-items-center m-top-15">
+                            <div class="header__nav-burger m-right-30">
+                                <i class="fas fa-bars"></i>
                             </div>
-                            <div class="header__profile">
-                                <div class="profile-image" style="background-image: url('/assets/img/wrench.jpg');">
+                            <div class="header__notification-profile d-flex align-items-center">
+                                <div class="header__notification m-right-30">
+                                    <i class="fas fa-bell"></i>
                                 </div>
-                                <div class="profile-box">
+                                <div class="header__profile">
+                                    <div class="profile-image" style="background-image: url('/assets/img/wrench.jpg');">
+                                    </div>
+                                    <div class="profile-box">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +84,7 @@
                                 </form>
 
                                 <div class="all-brands-box__brands-container">
-                                    <form class="row">
+                                    <div class="row">
                                         <div class="col-md-4 m-top-30">
                                             <div class="container brands-container__brand-single">
                                                 <div class="brand-single__selection d-flex align-items-center justify-content-end">
@@ -163,7 +169,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -175,11 +181,7 @@
     </div>
 
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
-    <script>
-        $('.brands-container__brand-single').click(function(){
-            console.log('asd')
-            $(this).toggleClass('selected')
-        })
-    </script>
+    <script src="/assets/js/admin/responsive-nav.js"></script>
+    <script src="/assets/js/admin/brand-select.js"></script>
 </body>
 </html>
