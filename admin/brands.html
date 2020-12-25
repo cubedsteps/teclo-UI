@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-Brands</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body id="admin">
+    <div id="admin__brands-page" class="container-fluid">
+        <div class="row">
+            <div id="nav" class="col-md-3 col-0">
+                <div class="container" style="position: relative;">                    
+                    <div class="nav__logo-burger d-flex justify-content-between align-items-center">
+                        <h2 class="bold">Telcohub</h2>
+                        <i class="fas fa-bars nav__burger"></i>
+                    </div>
+
+                    <div class="row nav__item align-items-center">
+                        <i class="fas fa-th-large col-3"></i>
+                        <p class="col-9">Dashboard</p>
+                    </div>
+
+                    <div class="row nav__item align-items-center">
+                        <div class="total-quotations d-flex justify-content-center align-items-center">
+                            <p><b>1</b></p>
+                        </div>
+                        <i class="fas fa-file-invoice-dollar col-3"></i>
+                        <p class="col-9">Quotations</p>
+                    </div>
+
+                    <div class="row nav__item align-items-center nav-active">
+                        <i class="fas fa-mobile col-3"></i>
+                        <p class="col-9">Brands</p>
+                    </div>
+
+                    <div class="row nav__item align-items-center">
+                        <i class="fas fa-cogs col-3"></i>
+                        <p class="col-9">Services</p>
+                    </div>
+
+                    <div class="row nav__item align-items-center">
+                        <i class="fas fa-sliders-h col-3"></i>
+                        <p class="col-9">Settings</p>
+                    </div>
+                </div>
+            </div>
+            <div id="body" class="col-md-9 col-12 m-btm-30">
+                <div class="row">
+                    <div id="header" class="col-12">
+                        <div class="container-fluid d-flex align-items-center m-top-15">
+                            <div class="header__nav-burger m-right-30">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <div class="header__notification-profile d-flex align-items-center">
+                                <div class="header__notification m-right-30">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <div class="header__profile">
+                                    <div class="profile-image" style="background-image: url('/assets/img/wrench.jpg');">
+                                    </div>
+                                    <div class="profile-box">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="brands" class="col-12 m-top-30">
+                        <div class="brands__main-container">
+                            <div class="main-container__heading">
+                                <h1>Brands</h1>
+                                <p>Select the brands that you're currently working on:</p>
+                            </div>
+
+                            <div class="main-container__all-brands-box m-top-30">
+                                <form action="" class="all-brands-box__form-container">
+                                    <input type="search" class="form-container--input-text" placeholder="Search brands...">
+                                </form>
+
+                                <div class="all-brands-box__brands-container">
+                                    <div class="row">
+                                        <div class="col-md-4 m-top-30">
+                                            <div class="container brands-container__brand-single">
+                                                <div class="brand-single__selection d-flex align-items-center justify-content-end">
+                                                    <p class="blue m-right-15 selection__text">Selected!!</p>
+                                                    <i class="fas fa-check-circle selection__icon"></i>
+                                                </div>
+                                                <div class="brand-single__image d-flex justify-content-center m-top-15">
+                                                    <img src="/assets/img/brands/samsung.png" alt="">
+                                                </div>
+                                                <div class="brand-single__name d-flex justify-content-center m-top-15">
+                                                    <p><b>Samsung</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 m-top-30">
+                                            <div class="container brands-container__brand-single selected">
+                                                <div class="brand-single__selection d-flex align-items-center justify-content-end">
+                                                    <p class="blue m-right-15 selection__text">Selected!!</p>
+                                                    <i class="fas fa-check-circle selection__icon"></i>
+                                                </div>
+                                                <div class="brand-single__image d-flex justify-content-center m-top-15">
+                                                    <img src="/assets/img/brands/oppo.png" alt="">
+                                                </div>
+                                                <div class="brand-single__name d-flex justify-content-center m-top-15">
+                                                    <p><b>Oppo</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 m-top-30">
+                                            <div class="container brands-container__brand-single">
+                                                <div class="brand-single__selection d-flex align-items-center justify-content-end">
+                                                    <p class="blue m-right-15 selection__text">Selected!!</p>
+                                                    <i class="fas fa-check-circle selection__icon"></i>
+                                                </div>
+                                                <div class="brand-single__image d-flex justify-content-center m-top-15">
+                                                    <img src="/assets/img/brands/samsung.png" alt="">
+                                                </div>
+                                                <div class="brand-single__name d-flex justify-content-center m-top-15">
+                                                    <p><b>Samsung</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 m-top-30">
+                                            <div class="container brands-container__brand-single">
+                                                <div class="brand-single__selection d-flex align-items-center justify-content-end">
+                                                    <p class="blue m-right-15 selection__text">Selected!!</p>
+                                                    <i class="fas fa-check-circle selection__icon"></i>
+                                                </div>
+                                                <div class="brand-single__image d-flex justify-content-center m-top-15">
+                                                    <img src="/assets/img/brands/apple.png" alt="">
+                                                </div>
+                                                <div class="brand-single__name d-flex justify-content-center m-top-15">
+                                                    <p><b>Apple</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 m-top-30">
+                                            <div class="container brands-container__brand-single selected">
+                                                <div class="brand-single__selection d-flex align-items-center justify-content-end">
+                                                    <p class="blue m-right-15 selection__text">Selected!!</p>
+                                                    <i class="fas fa-check-circle selection__icon"></i>
+                                                </div>
+                                                <div class="brand-single__image d-flex justify-content-center m-top-15">
+                                                    <img src="/assets/img/brands/samsung.png" alt="">
+                                                </div>
+                                                <div class="brand-single__name d-flex justify-content-center m-top-15">
+                                                    <p><b>Samsung</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 m-top-30">
+                                            <div class="container brands-container__brand-single selected">
+                                                <div class="brand-single__selection d-flex align-items-center justify-content-end">
+                                                    <p class="blue m-right-15 selection__text">Selected!!</p>
+                                                    <i class="fas fa-check-circle selection__icon"></i>
+                                                </div>
+                                                <div class="brand-single__image d-flex justify-content-center m-top-15">
+                                                    <img src="/assets/img/brands/apple.png" alt="">
+                                                </div>
+                                                <div class="brand-single__name d-flex justify-content-center m-top-15">
+                                                    <p><b>Apple</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="row">footer</div>
+    </div>
+
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/js/admin/responsive-nav.js"></script>
+    <script src="/assets/js/admin/brand-select.js"></script>
+</body>
+</html>

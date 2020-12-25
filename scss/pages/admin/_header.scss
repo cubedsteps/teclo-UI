@@ -1,0 +1,49 @@
+#admin{
+    #header{
+        i{
+            @extend .grey;
+            font-size: 30px;
+        }
+        .header__nav-burger{
+            display: none;
+            i{
+                transition: 0.5s all;
+            }
+
+            i:hover{
+                @extend .blue;
+            }
+        }
+        .header__notification{
+            i{
+                transition: 0.5s all;
+            }
+
+            i:hover{
+                @extend .blue;
+            }
+        }
+
+        .header__profile{
+            .profile-image{
+                height: 50px;
+                width: 50px;
+                background-color: rgb(206, 206, 206);
+                border-radius: 50%;    
+                background-position: center;
+                background-size: cover;  
+                transition: 0.5s all;          
+            }
+
+            .profile-image:hover{
+                transform: translateY(-5px);
+            }
+        }
+
+        @media only screen and (max-width: 768px){
+            .header__nav-burger{
+                display: block;
+            }
+        }
+    }
+}

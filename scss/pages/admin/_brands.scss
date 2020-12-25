@@ -1,0 +1,86 @@
+#admin{
+    #admin__brands-page{
+        #body{
+            #brands{
+                .brands__main-container{
+                    .main-container__all-brands-box{
+                        padding: 30px;
+                        border-radius: 20px;
+                        -webkit-box-shadow: 0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+                        -moz-box-shadow:    0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+                        box-shadow:         0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+
+                        .all-brands-box__form-container{
+                            .form-container--input-text{
+                                border-radius: 5px;
+                                padding: 0 20px;
+                                outline: none;
+                            }
+                        }
+
+                        .all-brands-box__brands-container{
+                            position: relative;
+                            .brands-container__checkbox{
+                                position: absolute;
+                                top: 15px;
+                                left: 15px;
+                            }
+                            .brands-container__brand-single{
+                                border-radius: 10px;
+                                padding: 20px;
+                                border: 1px solid rgb(194, 194, 194);                                
+                                .brand-single__selection{
+                                    .selection__text{
+                                        display: none;
+                                    }
+                                    .selection__icon{
+                                        font-size: 20px;
+                                        @extend .grey;
+                                    }    
+                                }
+
+                                .brand-single__image{
+                                    height: 100px;
+                                    img{
+                                        height: 100%;
+                                    }
+                                }
+
+                                .brand-single__name{
+                                    @extend .grey;
+                                }
+                            }
+
+                            .selected{
+                                border-radius: 10px;
+                                padding: 20px;
+                                border: 1px solid #0F14A2;   
+                                background-color: #F6F6FE;                            
+                                .brand-single__selection{
+                                    .selection__text{
+                                        display: block;
+                                    }
+                                    .selection__icon{
+                                        font-size: 20px;
+                                        @extend .blue;
+                                    }    
+                                }
+
+                                .brand-single__image{
+                                    height: 100px;
+                                    img{
+                                        height: 100%;
+                                    }
+                                }
+
+                                .brand-single__name{
+                                    @extend .blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

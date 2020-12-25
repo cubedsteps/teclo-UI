@@ -1,0 +1,60 @@
+$admin-font: 'Open Sans', sans-serif;
+
+
+#admin{
+
+    .bold{
+        font-weight: 700;
+    }
+
+    .regular{
+        font-weight: 400;
+    }
+
+    .light{
+        font-weight: 300;
+    }
+    h1,h2,h3,h4,h5,h6,p{
+        margin: 0;
+    }
+    h1{
+        font-size: 40px !important;
+    }
+
+    h2{
+        font-size: 30px !important;
+    }
+
+    h3{
+        font-size: 25px !important;
+    }
+
+    h4{
+        font-size: 20px !important;
+    }
+
+    h5{
+        font-size: 18px !important;
+    }
+
+    h6{
+        font-size: 16px !important;
+    }
+
+    p{
+        font-size: 14px !important;
+    }
+
+    .small{
+        font-size: 12px !important;
+    }
+
+    h4,h5,h6{
+        @extend .regular;
+    }
+
+    p, .small{
+        font-weight: 300;
+    }
+    font-family: $admin-font;
+}
