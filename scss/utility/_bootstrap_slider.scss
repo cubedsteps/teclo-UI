@@ -1,0 +1,20 @@
+.slider-horizontal{
+    width: 100% !important;
+}
+
+.slider-handle{
+    @extend .bg-blue;
+    background-image: none !important;
+}
+
+.slider-track{
+    *{
+        background-color: #F6F6FE;
+    }
+
+    .slider-selection{
+      background-image: none !important;
+      background-color: #c1c1ff;
+
+    }
+}

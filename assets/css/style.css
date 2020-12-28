@@ -472,16 +472,16 @@ h3{
 
 select {
   /* for Firefox */
-  -moz-appearance: none;
+  -moz-appearance: none !important;
   /* for Chrome */
-  -webkit-appearance: none;
-  background: url('https://cdn.iconscout.com/icon/free/png-256/keyboard-down-arrow-1780093-1518654.png') 98% / 5% no-repeat #eee;
+  -webkit-appearance: none !important;
+  background: url('https://cdn.iconscout.com/icon/free/png-256/keyboard-down-arrow-1780093-1518654.png') 98% / 5% no-repeat #eee !important;
 
 }
 
 /* For IE10 */
 select::-ms-expand {
-  display: none;
+  display: none !important;
 }
 
 

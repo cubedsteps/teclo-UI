@@ -3,21 +3,31 @@
         #body{
             #brands{
                 .brands__main-container{
-                    .main-container__all-brands-box{
-                        padding: 30px;
-                        border-radius: 20px;
-                        -webkit-box-shadow: 0px 0px 30px 0px rgba(213, 215, 246, 0.4);
-                        -moz-box-shadow:    0px 0px 30px 0px rgba(213, 215, 246, 0.4);
-                        box-shadow:         0px 0px 30px 0px rgba(213, 215, 246, 0.4);
-
+                    padding: 30px;
+                    border-radius: 20px;
+                    -webkit-box-shadow: 0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+                    -moz-box-shadow:    0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+                    box-shadow:         0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+                    .main-container__all-brands-box{  
                         .all-brands-box__form-container{
                             .form-container--input-text{
+                                height: 40px;
                                 border-radius: 5px;
-                                padding: 0 20px;
-                                outline: none;
+                                padding: 0 15px;
+                                outline: none;   
+                                /* for Firefox */
+                                -moz-appearance: none !important;
+                                /* for Chrome */
+                                -webkit-appearance: none !important;
+                                background: url('https://www.clker.com/cliparts/w/r/Q/0/x/D/search-icon-light-grey.svg') 99% / 40px no-repeat !important;
+    
+                            }
+    
+                            /* For IE10 */
+                            .form-container--input-text::-ms-expand {
+                                display: none !important;
                             }
                         }
-
                         .all-brands-box__brands-container{
                             position: relative;
                             .brands-container__checkbox{
