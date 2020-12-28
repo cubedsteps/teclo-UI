@@ -17,30 +17,7 @@
                 position: sticky;
                 top: 60px;
                 overflow-y: scroll;
-                border-right: 1px solid rgba(75, 75, 75, 0.1);
-
-                .select2-selection__choice{
-                    font-size: 12px;
-                    padding: 5px 20px 5px 10px;
-                    border: none;
-                    padding-right: 20px;
-                    position: relative;
-
-                    .select2-selection__choice__remove{
-                        color: black;
-                        position: absolute;
-                        right: 2px;
-                        border-right: none;
-                    }
-
-                    &:hover,&:focus{
-                        background-color: unset;
-                    }
-                }
-
-                .slider-horizontal{
-                    width: 100% !important;
-                }
+                border-right: 1px solid rgba(75, 75, 75, 0.1);                
 
                 .form-container--button{
                     width: 100%;
@@ -65,17 +42,6 @@
             .filter__main-container--height{
                 height: 91vh;
             }
-
-            // .filter__main-container::-webkit-scrollbar {
-            //     display: none;
-            //   }
-              
-              /* Hide scrollbar for IE, Edge and Firefox */
-            //   .filter__main-container {
-            //     -ms-overflow-style: none;  /* IE and Edge */
-            //     scrollbar-width: none;  /* Firefox */
-            //   }
-
               .slider-handle{
                   @extend .bg-blue;
                   background-image: none;

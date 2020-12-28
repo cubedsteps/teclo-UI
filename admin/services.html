@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Services</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+ 
+    <!-- bootstrap slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css" integrity="sha512-3q8fi8M0VS+X/3n64Ndpp6Bit7oXSiyCnzmlx6IDBLGlY5euFySyJ46RUlqIVs0DPCGOypqP8IRk/EyPvU28mQ==" crossorigin="anonymous" />
+
+    <!-- aniamte.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body id="admin">
+    <div id="admin__services-page" class="container-fluid">
+        <div class="row">
+            <div id="nav" class="col-md-2 col-0">
+                <div class="container" style="position: relative;">                    
+                    <a href="#">
+                        <div class="nav__logo-burger d-flex justify-content-between align-items-center">
+                            <h3 class="bold">Telcohub</h3>
+                            <i class="fas fa-bars nav__burger"></i>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="row nav__item align-items-center">
+                            <i class="fas fa-th-large col-3"></i>
+                            <p class="col-9">Dashboard</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="row nav__item align-items-center">
+                            <div class="total-quotations d-flex justify-content-center align-items-center">
+                                <p><b>1</b></p>
+                            </div>
+                            <i class="fas fa-file-invoice-dollar col-3"></i>
+                            <p class="col-9">Quotations</p>
+                        </div>
+                    </a>
+
+                    <a href="brands.html">
+                        <div class="row nav__item align-items-center">
+                            <i class="fas fa-mobile col-3"></i>
+                            <p class="col-9">Brands</p>
+                        </div>
+                    </a>
+
+                    <a href="services.html">
+                        <div class="row nav__item align-items-center nav-active">
+                            <i class="fas fa-cogs col-3"></i>
+                            <p class="col-9">Services</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="row nav__item align-items-center">
+                            <i class="fas fa-sliders-h col-3"></i>
+                            <p class="col-9">Settings</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="body" class="col-md-10 col-12 m-btm-30">
+                <div class="row">
+                    <div id="header" class="col-12">
+                        <div class="container-fluid d-flex align-items-center m-top-15">
+                            <div class="header__nav-burger m-right-30">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <div class="header__notification-profile d-flex align-items-center">
+                                <div class="header__notification m-right-30">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <div class="header__profile">
+                                    <div class="profile-image" style="background-image: url('/assets/img/wrench.jpg');">
+                                    </div>
+                                    <div class="profile-box">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="services" class="col-12 m-top-30">
+                        <div class="services__main-container">
+                            <div class="main-container__heading">
+                                <h1 class="bold">Services</h1>
+                                <p>Your services. Your price.</p>
+                            </div>
+
+                            <div class="main-container__all-services-box ">
+                                <form class="row" id="service-add-form">
+                                    <div class="col-md-3 m-top-30 all-services-box__form-container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p class="bold">Select Service</p>
+                                                </div>
+                                            </div>
+                                            <div class="row m-top-5">
+                                                <div class="col-12">
+                                                    <select name="" id="service-select" class="form-container--select">
+                                                        <option value="1" data-bg="#FFC1C1">Select Service</option>
+                                                        <option value="1" data-bg="#FFC1C1">Display</option>
+                                                        <option value="2" data-bg="#C1E1FF">Water Damage</option>
+                                                        <option value="3"data-bg="#FFD8C1">Charging port</option>
+                                                        <option value="4" data-bg="#FFC1EA">Battery</option>
+                                                        <option value="5" data-bg="#EBFFC1">Software</option>
+                                                    </select>
+                                                </div>
+                                            </div>                                        
+                                    </div>
+                                    <div class="col-md-4 m-top-30">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p class="bold">Select Price Range</p>
+                                                </div>
+                                            </div>
+                                            <div class="row m-top-15">
+                                                <div class="col-12 d-flex">
+                                                    <p class="min-price-value m-right-15"></p>
+                                                    <input class="a-price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/>
+                                                    <p class="max-price-value m-left-15"></p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4 m-top-30">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p class="bold">Brands</p>
+                                                </div>
+                                            </div>
+                                            <div class="row m-top-5">
+                                                <div class="col-12">
+                                                    <select multiple="multiple" id="brand-list" class="issue-list">
+                                                        <option value="1" data-bg="#FFC1C1">Apple</option>
+                                                        <option value="2" data-bg="#C1E1FF">Samsung</option>
+                                                        <option value="3"data-bg="#FFD8C1">Oppo</option>
+                                                        <option value="4" data-bg="#FFC1EA">Sony</option>
+                                                        <option value="5" data-bg="#EBFFC1">Xiaomi</option>
+                                                    </select>
+                                                </div>
+                                            </div>                                  
+                                    </div>                                    
+                                    <div class="col-md-1 m-top-30 d-flex align-items-center justify-content-center">       
+                                        <i class="fas fa-plus service-add"></i>                  
+                                    </div>                                    
+                                </form>
+
+                                <div class="row all-service-box__services">
+                                    <div class="container-fluid services__container">
+                                        <div class="row container__service-single">
+                                            <div class="col-md-3 m-top-30 service-single__name d-flex align-items-center">
+                                                <select name="" id="" class="form-container--select">
+                                                    <option value="1" data-bg="#FFC1C1">Display</option>
+                                                    <option value="2" data-bg="#C1E1FF">Water Damage</option>
+                                                    <option value="3"data-bg="#FFD8C1">Charging port</option>
+                                                    <option value="4" data-bg="#FFC1EA">Battery</option>
+                                                    <option value="5" data-bg="#EBFFC1">Software</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 m-top-30 service-single__price-slider d-flex align-items-center">
+                                                <p class="m-right-15">150</p>
+                                                <input class="a-price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
+                                                <p class="m-left-15">400</p>
+                                            </div>
+                                            <div class="col-md-4 m-top-30 service-single__brands d-flex align-items-center">
+                                                <select multiple="multiple" class="brand-list">
+                                                    <option value="1" data-bg="#FFC1C1">Display</option>
+                                                    <option value="2" data-bg="#C1E1FF">Water Damage</option>
+                                                    <option value="3"data-bg="#FFD8C1">Charging port</option>
+                                                    <option value="4" data-bg="#FFC1EA">Battery</option>
+                                                    <option value="5" data-bg="#EBFFC1">Software</option>
+                                                  </select>
+                                            </div>                                    
+                                            <div class="col-md-1 m-top-30 service-single__delete d-flex align-items-center justify-content-center">
+                                                <i class="fas fa-trash-alt service-delete "></i>
+                                            </div>                                    
+                                        </div>
+                                        <div class="row container__service-single">
+                                            <div class="col-md-3 m-top-30 service-single__name d-flex align-items-center">
+                                                <select name="" id="" class="form-container--select">
+                                                    <option value="1" data-bg="#FFC1C1">Display</option>
+                                                    <option value="2" data-bg="#C1E1FF">Water Damage</option>
+                                                    <option value="3"data-bg="#FFD8C1">Charging port</option>
+                                                    <option value="4" data-bg="#FFC1EA">Battery</option>
+                                                    <option value="5" data-bg="#EBFFC1">Software</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 m-top-30 service-single__price-slider d-flex align-items-center">
+                                                <p class="m-right-15">150</p>
+                                                <input class="a-price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
+                                                <p class="m-left-15">400</p>
+                                            </div>
+                                            <div class="col-md-4 m-top-30 service-single__brands d-flex align-items-center">
+                                                <select multiple="multiple" class="brand-list">
+                                                    <option value="1" data-bg="#FFC1C1">Display</option>
+                                                    <option value="2" data-bg="#C1E1FF">Water Damage</option>
+                                                    <option value="3"data-bg="#FFD8C1">Charging port</option>
+                                                    <option value="4" data-bg="#FFC1EA">Battery</option>
+                                                    <option value="5" data-bg="#EBFFC1">Software</option>
+                                                  </select>
+                                            </div>                                    
+                                            <div class="col-md-1 m-top-30 service-single__delete d-flex align-items-center justify-content-center">
+                                                <i class="fas fa-trash-alt service-delete"></i>
+                                            </div>                                    
+                                        </div>
+                                        <div class="row container__service-single">
+                                            <div class="col-md-3 m-top-30 service-single__name d-flex align-items-center">
+                                                <select name="" id="" class="form-container--select">
+                                                    <option value="1" data-bg="#FFC1C1">Display</option>
+                                                    <option value="2" data-bg="#C1E1FF">Water Damage</option>
+                                                    <option value="3"data-bg="#FFD8C1">Charging port</option>
+                                                    <option value="4" data-bg="#FFC1EA">Battery</option>
+                                                    <option value="5" data-bg="#EBFFC1">Software</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 m-top-30 service-single__price-slider d-flex align-items-center">
+                                                <p class="m-right-15">150</p>
+                                                <input class="a-price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
+                                                <p class="m-left-15">400</p>
+                                            </div>
+                                            <div class="col-md-4 m-top-30 service-single__brands d-flex align-items-center">
+                                                <select multiple="multiple" class="brand-list">
+                                                    <option value="1" data-bg="#FFC1C1">Display</option>
+                                                    <option value="2" data-bg="#C1E1FF">Water Damage</option>
+                                                    <option value="3"data-bg="#FFD8C1">Charging port</option>
+                                                    <option value="4" data-bg="#FFC1EA">Battery</option>
+                                                    <option value="5" data-bg="#EBFFC1">Software</option>
+                                                  </select>
+                                            </div>                                    
+                                            <div class="col-md-1 m-top-30 service-single__delete d-flex align-items-center justify-content-center">
+                                                <i class="fas fa-trash-alt service-delete"></i>
+                                            </div>                                    
+                                        </div>
+                                        <div class="row container__service-single">
+                                            <div class="col-md-3 m-top-30 service-single__name d-flex align-items-center">
+                                                <select name="" id="" class="form-container--select">
+                                                    <option value="1" data-bg="#FFC1C1">Display</option>
+                                                    <option value="2" data-bg="#C1E1FF">Water Damage</option>
+                                                    <option value="3"data-bg="#FFD8C1">Charging port</option>
+                                                    <option value="4" data-bg="#FFC1EA">Battery</option>
+                                                    <option value="5" data-bg="#EBFFC1">Software</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 m-top-30 service-single__price-slider d-flex align-items-center">
+                                                <p class="m-right-15">150</p>
+                                                <input class="a-price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
+                                                <p class="m-left-15">400</p>
+                                            </div>
+                                            <div class="col-md-4 m-top-30 service-single__brands d-flex align-items-center">
+                                                <select multiple="multiple" class="brand-list">
+                                                    <option value="1" data-bg="#FFC1C1">Display</option>
+                                                    <option value="2" data-bg="#C1E1FF">Water Damage</option>
+                                                    <option value="3"data-bg="#FFD8C1">Charging port</option>
+                                                    <option value="4" data-bg="#FFC1EA">Battery</option>
+                                                    <option value="5" data-bg="#EBFFC1">Software</option>
+                                                  </select>
+                                            </div>                                    
+                                            <div class="col-md-1 m-top-30 service-single__delete d-flex align-items-center justify-content-center">
+                                                <i class="fas fa-trash-alt service-delete"></i>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="row">footer</div>
+    </div>
+    
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js" integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g==" crossorigin="anonymous"></script>
+    <script src="/assets/js/filter-select.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous"></script>
+    <script src="/assets/js/admin/responsive-nav.js"></script>
+
+
+    <script>
+        $(".price-slider").slider({});
+        $(".a-price-slider").slider({});
+        
+    </script>
+
+    <script>
+        let min = $('.a-price-slider').val().split(',')[0];
+        let max = $('.a-price-slider').val().split(',')[1];
+
+        $('.min-price-value').text(min);
+        $('.max-price-value').text(max);
+
+        $('.slider').on('slide', function (ev) {   
+            let min = $('.a-price-slider').val().split(',')[0];
+            let max = $('.a-price-slider').val().split(',')[1];    
+            $('.min-price-value').text(min);
+            $('.max-price-value').text(max);
+            
+            $('.min-price-value').text(min);
+            $('.max-price-value').text(max);
+        });
+    </script>
+      
+</body>
+</html>

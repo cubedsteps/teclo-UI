@@ -1,32 +1,76 @@
 #admin{
     #nav{
-        @extend .bg-blue;
+        background-image: url(/assets/img/hero-bg.jpg);
+        background-size: cover;
         height: 100vh;
         position: sticky;
         top: 0;
+        padding: 0;
 
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            @extend .bg-blue;
+            opacity: 0.9;
+        }
+
+        a{
+            text-decoration: none;
+        }
         .nav__logo-burger{
             @extend .m-top-15;
+            h3{
+                transition: 0.5s all;
+            }
             i{
                 display: none;
                 font-size: 30px;
+            }
+
+            &:hover{
+                h3{
+                    @extend .faded-blue;
+                }
             }
         }
 
         .nav__item{
             @extend .m-top-50;
             position: relative;
+
+            p{
+                font-size: 12px !important;
+            }
+
             .total-quotations{
-                background-color: red;
+                @extend .bg-red;
                 height: 25px;
                 width: 25px;
                 border-radius: 50%;
                 position: absolute;
-                z-index: 1;
-                top: -10px;                
+                right: 20px;               
+            }
+
+            &::before{
+                content: '';
+                transition: 0.5s all;
+                padding: 30px;
+                    position: absolute;
+                    width: 100%;
+            }
+
+            &:hover{
+                &::before{
+                    
+                    @extend .bg-blue;
+                    opacity: 0.9;
+                }
             }
         }
-
         .nav__item, .nav__logo-burger{
             @extend .white;
         }
@@ -36,7 +80,7 @@
                 @extend .faded-blue;
             }
             i{
-                font-size: 30px;
+                font-size: 22px;
             }
         }
         .nav-active{
@@ -51,11 +95,18 @@
 
         .nav-active::before{
             content: '';
-            padding: 35px;
+            padding: 30px;
             position: absolute;
             width: 100%;
-            border-radius: 15px;
-            @extend .bg-faded-blue;
+            @extend .bg-white;
+            transition: 0.5s all;
+        }
+
+        .nav-active:hover{
+            &::before{
+                @extend .bg-white;
+                opacity: 0.8;
+            }
         }
     }
 

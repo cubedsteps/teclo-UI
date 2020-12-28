@@ -12,17 +12,26 @@ black
  ------*/
 
 $primary-blue: #0F14A2;
-$primary-faded-blue: hsl(238, 83%, 95%);
-$primary-white: hsl(0, 0%, 98%);
+$primary-faded-blue: hsl(240, 84%, 95%);
+$primary-white: hsl(0, 0%, 100%);
 $primary-grey: rgb(202, 202, 202);
 $primary-green: #1acc8d;
+$primary-red: #e41616;
 
 .white{
     color: $primary-white;
 }
 
+.red{
+    color: $primary-red;
+}
+
 .blue{
     color: $primary-blue !important;
+}
+
+.green{
+    color: $primary-green !important;
 }
 
 .grey{
@@ -38,11 +47,19 @@ $primary-green: #1acc8d;
 }
 
 .bg-blue{
-      background-color:$primary-blue;
+      background-color:$primary-blue !important;
+}
+
+.bg-red{
+      background-color:$primary-red !important;
 }
 
 .bg-green{
     background-color: $primary-green;
+}
+
+.bg-white{
+    background-color: $primary-white !important;
 }
 
 .display{
