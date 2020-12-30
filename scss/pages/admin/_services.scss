@@ -13,13 +13,11 @@
                     /* for Chrome */
                     -webkit-appearance: none !important;
                     background: url('https://cdn.iconscout.com/icon/free/png-256/keyboard-down-arrow-1780093-1518654.png') 95% / 20px no-repeat rgb(250, 250, 250) !important;
-                  
-                  }
-                  
-                  /* For IE10 */
-                  select::-ms-expand {
+                }                  
+                /* For IE10 */
+                select::-ms-expand {
                     display: none !important;
-                  }      
+                }      
                 .services__main-container{
                     padding: 30px;
                     border-radius: 20px;

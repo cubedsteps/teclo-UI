@@ -10,7 +10,6 @@ black
 
 
  ------*/
-
 $primary-blue: #0F14A2;
 $primary-faded-blue: hsl(240, 84%, 95%);
 $primary-white: hsl(0, 0%, 100%);
@@ -63,26 +62,26 @@ $primary-red: #e41616;
 }
 
 .display{
-    background-color: #FFC1C1;
-    color: #FF0000;
+    background-color: #FFC1C1 !important;
+    color: #FF0000 !important;
 }
 
 .water{
-    background-color:#C1E1FF;
-    color: #0084FF;
+    background-color:#C1E1FF !important;
+    color: #0084FF !important;
 }
 
 .charge{
-    background-color: #FFD8C1;
-    color: #FF5E00;
+    background-color: #FFD8C1 !important;
+    color: #FF5E00 !important;
 }
 
 .battery{
-    background-color: #FFC1EA;
-    color: #FF00A8;
+    background-color: #FFC1EA !important;
+    color: #FF00A8 !important;
 }
 
 .software{
-    background-color: #EBFFC1;
-    color: #92D700;
+    background-color: #EBFFC1 !important;
+    color: #92D700 !important;
 }

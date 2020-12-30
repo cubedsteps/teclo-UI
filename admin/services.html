@@ -132,7 +132,7 @@
                                             <div class="row m-top-15">
                                                 <div class="col-12 d-flex">
                                                     <p class="min-price-value m-right-15"></p>
-                                                    <input class="a-price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/>
+                                                    <input class="price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/>
                                                     <p class="max-price-value m-left-15"></p>
                                                 </div>
                                             </div>
@@ -156,7 +156,7 @@
                                             </div>                                  
                                     </div>                                    
                                     <div class="col-md-1 m-top-30 d-flex align-items-center justify-content-center">       
-                                        <i class="fas fa-plus service-add"></i>                  
+                                        <i class="fas fa-plus service-add m-top-15"></i>                  
                                     </div>                                    
                                 </form>
 
@@ -174,7 +174,7 @@
                                             </div>
                                             <div class="col-md-4 m-top-30 service-single__price-slider d-flex align-items-center">
                                                 <p class="m-right-15">150</p>
-                                                <input class="a-price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
+                                                <input class="price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
                                                 <p class="m-left-15">400</p>
                                             </div>
                                             <div class="col-md-4 m-top-30 service-single__brands d-flex align-items-center">
@@ -202,7 +202,7 @@
                                             </div>
                                             <div class="col-md-4 m-top-30 service-single__price-slider d-flex align-items-center">
                                                 <p class="m-right-15">150</p>
-                                                <input class="a-price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
+                                                <input class="price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
                                                 <p class="m-left-15">400</p>
                                             </div>
                                             <div class="col-md-4 m-top-30 service-single__brands d-flex align-items-center">
@@ -230,7 +230,7 @@
                                             </div>
                                             <div class="col-md-4 m-top-30 service-single__price-slider d-flex align-items-center">
                                                 <p class="m-right-15">150</p>
-                                                <input class="a-price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
+                                                <input class="price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
                                                 <p class="m-left-15">400</p>
                                             </div>
                                             <div class="col-md-4 m-top-30 service-single__brands d-flex align-items-center">
@@ -258,7 +258,7 @@
                                             </div>
                                             <div class="col-md-4 m-top-30 service-single__price-slider d-flex align-items-center">
                                                 <p class="m-right-15">150</p>
-                                                <input class="a-price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
+                                                <input class="price-slider" id="price-slider" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-slider-enabled="false"/>
                                                 <p class="m-left-15">400</p>
                                             </div>
                                             <div class="col-md-4 m-top-30 service-single__brands d-flex align-items-center">
@@ -294,23 +294,18 @@
 
     <script>
         $(".price-slider").slider({});
-        $(".a-price-slider").slider({});
-        
     </script>
 
     <script>
-        let min = $('.a-price-slider').val().split(',')[0];
-        let max = $('.a-price-slider').val().split(',')[1];
+        let min = $('.price-slider').val().split(',')[0];
+        let max = $('.price-slider').val().split(',')[1];
 
         $('.min-price-value').text(min);
         $('.max-price-value').text(max);
 
         $('.slider').on('slide', function (ev) {   
-            let min = $('.a-price-slider').val().split(',')[0];
-            let max = $('.a-price-slider').val().split(',')[1];    
-            $('.min-price-value').text(min);
-            $('.max-price-value').text(max);
-            
+            let min = $('.price-slider').val().split(',')[0];
+            let max = $('.price-slider').val().split(',')[1];    
             $('.min-price-value').text(min);
             $('.max-price-value').text(max);
         });
