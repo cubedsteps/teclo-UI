@@ -71,27 +71,81 @@ $primary-orange: rgb(255, 124, 1);
     
 }
 
-.display{
-    background-color: #FFC1C1 !important;
-    color: #FF0000 !important;
-}
 
-.water{
-    background-color:#C1E1FF !important;
-    color: #0084FF !important;
-}
+// icons
 
-.charge{
-    background-color: #FFD8C1 !important;
-    color: #FF5E00 !important;
-}
+$bg_fingerprint: hsl(348, 100%, 85%);
+$bg_camera: hsl(50, 100%, 85%);
+$bg_charging-problem: hsl(200, 100%, 85%);
+$bg_battery: hsl(140, 100%, 85%);
+$bg_headphone-port: hsl(210, 100%, 85%);
+$bg_microphone: hsl(230, 100%, 85%);
+$bg_screen-protector: hsl(170, 100%, 85%);
+$bg_screen-replacement: hsl(36, 100%, 85%);
+$bg_screen-unlock: hsl(320, 100%, 85%);
+$bg_software: hsl(290, 100%, 85%);
+$bg_speaker: hsl(22, 100%, 85%);
+$bg_water-damage: hsl(260, 100%, 85%);
 
+$text_fingerprint: #FF002B;
+$text_camera: #F0C800;
+$text_charging-problem: #00AAFF;
+$text_battery: #00F050;
+$text_headphone-port: #0080FF;
+$text_microphone: #002BFF;
+$text_screen-protector: #00F0C8;
+$text_screen-replacement: #FF9900;
+$text_screen-unlock: #FF00A8;
+$text_software: #D500FF;
+$text_speaker: #FF5C00;
+$text_water-damage: #5500FF;
+
+
+.fingerprint{
+    color: $text_fingerprint !important;
+    background-color: $bg_fingerprint !important;
+}
+.camera{
+    color: $text_camera !important;
+    background-color: $bg_camera !important;
+}
+.charging-problem{
+    color: $text_charging-problem !important;
+    background-color: $bg_charging-problem !important;
+}
 .battery{
-    background-color: #FFC1EA !important;
-    color: #FF00A8 !important;
+    color: $text_battery !important;
+    background-color: $bg_battery !important;
 }
-
+.headphone-port{
+    color: $text_headphone-port !important;
+    background-color: $bg_headphone-port !important;
+}
+.microphone{
+    color: $text_microphone !important;
+    background-color: $bg_microphone !important;
+}
+.screen-protector{
+    color: $text_screen-protector !important;
+    background-color: $bg_screen-protector !important;
+}
+.screen-replacement{
+    color: $text_screen-replacement !important;
+    background-color: $bg_screen-replacement !important;
+}
+.screen-unlock{
+    color: $text_fingerprint !important;
+    background-color: $bg_fingerprint !important;
+}
 .software{
-    background-color: #EBFFC1 !important;
-    color: #92D700 !important;
+    color: $text_software !important;
+    background-color: $bg_software !important;
+}
+.speaker{
+    color: $text_speaker !important;
+    background-color: $bg_speaker !important;
+}
+.water-damage{
+    color: $text_water-damage !important;
+    background-color: $bg_water-damage !important;
 }

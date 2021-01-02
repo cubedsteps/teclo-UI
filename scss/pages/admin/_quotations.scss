@@ -29,9 +29,32 @@
                                         border-radius:50%;
                                     }
                                 }
+
+                                .quotation-single__issues{
+                                    .issues__single-issue{
+                                        padding: 5px; 
+                                        padding-right:10px; 
+                                        border-radius:20px;
+                                        @extend .m-top-5;
+                                        @extend .m-btm-5;
+                                        @extend .m-left-5;
+
+                                        &:first-child{
+                                            margin-left: 0px !important;
+                                        }
+
+                                        .single-issue__text{
+                                            @extend .m-left-5;
+                                            @extend .small;
+                                            @extend .bold;
+                                        }
+                                    }
+
+                                    
+                                }
                                 
-                                .quotation-single__accept-delete{
-                                    .quotation-single__accept{
+                                .quotation-single__accept-delete-drop-arrow{
+                                    .quotation-single__accept,.quotation-single__drop-arrow{
                                         @extend .blue;
                                     }
                                     .quotation-single__delete{
