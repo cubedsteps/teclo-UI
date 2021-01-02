@@ -4,43 +4,60 @@
             .quotations__main-container{
                 padding: 30px;
                 border-radius: 20px;
-                -webkit-box-shadow: 0px 0px 30px 0px rgba(213, 215, 246, 0.4);
-                -moz-box-shadow:    0px 0px 30px 0px rgba(213, 215, 246, 0.4);
-                box-shadow:         0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+                    -webkit-box-shadow: 0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+                    -moz-box-shadow:    0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+                    box-shadow:         0px 0px 30px 0px rgba(213, 215, 246, 0.4);
                 .main-container__all-quotations-box{
+                    overflow-x: hidden;
                     .all-quotations-box__quotations{
                         .quotations__container{
                             .container__quotation-single{
-                                border: 1px solid rgb(204, 204, 204);
-                                padding: 15px;
-                                border-radius: 10px;
-                                .quotation-single__status--new{                                    
-                                    .status--indicator{
-                                        height: 15px;
-                                        width: 15px;
-                                        border-radius: 50%;
+                                border-bottom: 1px solid rgb(204, 204, 204);
+                                padding-bottom: 15px;
+
+                                .quotation-single__status{
+                                    .status--new{
                                         @extend .bg-red;
+                                        height:15px; 
+                                        width:15px; 
+                                        border-radius:50%;
                                     }
-                                    .status--text{
-                                        color: red;
+                                    .status--pending{
+                                        @extend .bg-orange;
+                                        height:15px; 
+                                        width:15px; 
+                                        border-radius:50%;
                                     }
                                 }
-                                .quotation-single__all-issues{
-                                    .all-issues__single-issue{
-                                        padding: 5px;
-                                        padding-right: 10px;
-                                        border-radius: 22px;
-                                        margin-right: 10px;                                       
-                                        .single-issue__icon{
-                                            height: 25px;
-                                            width: 25px;
-                                            border-radius: 50%;
-                                            svg{
-                                                margin-top: -1.8px;
-                                            }
+                                
+                                .quotation-single__accept-delete{
+                                    .quotation-single__accept{
+                                        @extend .blue;
+                                    }
+                                    .quotation-single__delete{
+                                        @extend .red;
+                                    }                                    
+                                    *{
+                                        transition: 0.2s all;
+                                        transform-origin: center;
+                                        &:hover{
+                                            transform: scale(1.2);
                                         }
-                                        .single-issue__text{
-                                            @extend .small;
+                                    }
+                                }
+
+                                .form-container--input-text{
+                                    height: 35px !important;
+                                }
+
+                                .form-container--button{
+                                    width: 100%;
+                                }
+
+                                .quotation-single__user-details-quote-form{
+                                    .quotation-single__user-details{
+                                        .user-details__no-details{
+                                            height: 100%; width:100%
                                         }
                                     }
                                 }
