@@ -17,6 +17,11 @@ $primary-grey: rgb(202, 202, 202);
 $primary-green: #1acc8d;
 $primary-red: #e41616;
 $primary-orange: rgb(255, 124, 1);
+$primary-black: rgb(0, 0, 0);
+
+.black{
+    color: $primary-black;
+}
 
 .white{
     color: $primary-white;
@@ -52,6 +57,10 @@ $primary-orange: rgb(255, 124, 1);
 
 .bg-blue{
       background-color:$primary-blue !important;
+}
+
+.bg-black{
+      background-color:$primary-black !important;
 }
 
 .bg-red{
