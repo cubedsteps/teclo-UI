@@ -117,7 +117,10 @@
                                 <p class="m-left-5">Your work station.</p>
                             </div>
                             <div class="main-container__all-quotations-box">
-                                <div class="d-flex m-top-30 all-quotations-box__filter-status">
+                                <div class="d-flex align-items-center m-top-30 all-quotations-box__filter-status">
+                                    <div>
+                                        <p>Filter by:</p>
+                                    </div>
                                     <div class="single-status--not-selected filter-status__single-status">
                                         <p>New</p>
                                     </div>
@@ -192,7 +195,7 @@
                                             </div>
                                             <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
                                                 <div class="row">
-                                                    <div class="col-7 quotation-single__user-details m-top-15">
+                                                    <div class="col-7 quotation-single__user-details">
                                                         <div
                                                             class="user-details__no-details d-flex align-items-center justify-content-center">
                                                             <div>
@@ -250,8 +253,7 @@
                                                         </div>
                                                         <div class="m-top-15 quote-form-container__description">
                                                             <p>Description</p>
-                                                            <textarea
-                                                                class="form-container--textarea m-top-5"></textarea>
+                                                            <textarea class="form-container--textarea m-top-5" maxlength = "150"></textarea>
                                                         </div>
                                                         <div class="m-top-15 quote-form-container__send-btn">
                                                             <button class="form-container--button send-btn">
@@ -310,7 +312,7 @@
                                             </div>
                                             <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
                                                 <div class="row">
-                                                    <div class="col-7 quotation-single__user-details m-top-15">
+                                                    <div class="col-7 quotation-single__user-details">
                                                         <div
                                                             class="user-details__no-details d-flex align-items-center justify-content-center">
                                                             <div>
@@ -366,7 +368,7 @@
                                                         <div class="m-top-15 quote-form-container__description">
                                                             <p>Description</p>
                                                             <textarea
-                                                                class="form-container--textarea m-top-5"></textarea>
+                                                                class="form-container--textarea m-top-5" maxlength = "150"></textarea>
                                                         </div>
                                                         <div class="m-top-15 quote-form-container__send-btn">
                                                             <button class="form-container--button send-btn">
@@ -453,7 +455,7 @@
                                             </div>
                                             <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
                                                 <div class="row">
-                                                    <div class="col-7 quotation-single__user-details m-top-15">
+                                                    <div class="col-7 quotation-single__user-details">
                                                         <div
                                                             class="user-details__no-details d-flex align-items-center justify-content-center display-none">
                                                             <p>User details will be available only after they accept
@@ -504,7 +506,7 @@
                                                         <div class="m-top-15 quote-form-container__description">
                                                             <p>Description</p>
                                                             <textarea
-                                                                class="form-container--textarea m-top-5"></textarea>
+                                                                class="form-container--textarea m-top-5" maxlength = "150"></textarea>
                                                         </div>
                                                         <div class="m-top-15 quote-form-container__send-btn">
                                                             <button class="form-container--button send-btn">
@@ -591,7 +593,7 @@
                                             </div>
                                             <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
                                                 <div class="row">
-                                                    <div class="col-7 quotation-single__user-details m-top-15">
+                                                    <div class="col-7 quotation-single__user-details">
                                                         <div
                                                             class="user-details__no-details d-flex align-items-center justify-content-center display-none">
                                                             <p>User details will be available only after they accept
@@ -605,26 +607,26 @@
                                                             </div>
                                                             <div class="row m-top-30">
                                                                 <div class="col-3">
-                                                                    <p>User name:</p>
+                                                                    <p class="bold">User name:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">Sohail Dangol</p>
+                                                                    <p>Sohail Dangol</p>
                                                                 </div>
                                                             </div>
                                                             <div class="row m-top-10">
                                                                 <div class="col-3">
-                                                                    <p>Email:</p>
+                                                                    <p class="bold">Email:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">Sohail.Dangol130@gmail.com</p>
+                                                                    <p>Sohail.Dangol130@gmail.com</p>
                                                                 </div>
                                                             </div>
                                                             <div class="row m-top-10">
                                                                 <div class="col-3">
-                                                                    <p>Phone number:</p>
+                                                                    <p class="bold">Phone number:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">9861282607</p>
+                                                                    <p>9861282607</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -642,7 +644,7 @@
                                                         <div class="m-top-15 quote-form-container__description">
                                                             <p>Description</p>
                                                             <textarea
-                                                                class="form-container--textarea m-top-5"></textarea>
+                                                                class="form-container--textarea m-top-5" maxlength = "150"></textarea>
                                                         </div>
                                                         <div class="m-top-15 quote-form-container__send-btn">
                                                             <button class="form-container--button send-btn">
@@ -712,19 +714,6 @@
         })
         $('.quotation-single__drop-arrow').click(function () {
             $(this).parent().parent().find('.quotation-single__user-details-quote-form').slideToggle();
-        })
-
-        $('.quotation-single__delete').click(function () {
-            var $container__quotation_single = $(this).parent().parent().parent()
-            console.log($container__quotation_single);
-            $container__quotation_single.addClass('animate__animated animate__fadeOutRight')
-            setTimeout(
-                delete_quote,
-                700)
-
-            function delete_quote() {
-                $container__quotation_single.remove();
-            }
         })
 
         $('.filter-status__single-status').click(function(){
