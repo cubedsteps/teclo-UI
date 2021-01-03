@@ -147,8 +147,11 @@
                                             <div class="col-md-12 quotation-single__user-details-quote-form">
                                                 <div class="row">
                                                     <div class="col-7 quotation-single__user-details m-top-15">
-                                                        <div class="user-details__no-details d-flex align-items-center justify-content-center ">
-                                                            <p>User details will be available only after they accept your quote!</p>
+                                                        <div class="user-details__no-details d-flex align-items-center justify-content-center">
+                                                            <div>
+                                                                <img src="/assets/img/no-user-details.png" style="width: 200px;" class="mx-auto d-block" alt="">
+                                                                <p class="m-top-15">User details will be available only after they accept your quote!</p>
+                                                            </div>
                                                         </div>
                                                         <div class="user-details__all-details display-none">
                                                             <div class="row">
@@ -186,8 +189,14 @@
                                                         <div class="m-top-15 quote-form-container__price-estimation">
                                                             <p>Your estimation</p>
                                                             <div class="d-flex align-items-center m-top-5">
-                                                                <p>$</p>
-                                                                <input type="text" class="form-container--input-text m-left-15"/>
+                                                                <div class="input-group">
+                                                                    <div class="input-group-prepend">
+                                                                      <div class="input-group-text">$</div>
+                                                                    </div>
+                                                                    <input style="outline: none !important;" type="text" class="form-control" id="inlineFormInputGroup">
+                                                                  </div>
+                                                                <!-- <p>$</p>
+                                                                <input type="text" class="form-container--input-text m-left-15"/> -->
                                                             </div>
                                                         </div>
                                                         <div class="m-top-15 quote-form-container__description">
