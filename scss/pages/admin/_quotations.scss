@@ -17,16 +17,12 @@
 
                                 .quotation-single__status{
                                     .status--new{
-                                        @extend .bg-red;
-                                        height:15px; 
-                                        width:15px; 
-                                        border-radius:50%;
+                                        @extend .red;
+                                        @extend .regular;
                                     }
                                     .status--pending{
-                                        @extend .bg-orange;
-                                        height:15px; 
-                                        width:15px; 
-                                        border-radius:50%;
+                                        @extend .orange;
+                                        @extend .regular;
                                     }
                                 }
 
