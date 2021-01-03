@@ -101,9 +101,9 @@
                                             </a>
                                         </div>
                                         <div class="profile-box--item">
-                                            <button class="btn form-container--button bg-red">
-                                                <p>Logout</p>
-                                            </button>
+                                            <a href="#" class="red">
+                                                Logout
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -117,6 +117,23 @@
                                 <p class="m-left-5">Your work station.</p>
                             </div>
                             <div class="main-container__all-quotations-box">
+                                <div class="d-flex m-top-30 all-quotations-box__filter-status">
+                                    <div class="single-status--not-selected filter-status__single-status">
+                                        <p>New</p>
+                                    </div>
+                                    <div class="filter-status__single-status single-status--not-selected">
+                                        <p>Pending</p>
+                                    </div>
+                                    <div class="filter-status__single-status single-status--not-selected">
+                                        <p>Progress</p>
+                                    </div>
+                                    <div class="filter-status__single-status single-status--not-selected">
+                                        <p>Done</p>
+                                    </div>
+                                    <div class="filter-status__single-status single-status--clear display-none">
+                                        <p>Clear all</p>
+                                    </div>
+                                </div>
                                 <div class="row m-top-30 all-quotations-box__labels">
                                     <div class="col-1">
                                         <p class="small">Status</p>
@@ -133,18 +150,18 @@
                                 </div>
                                 <div class="row all-quotations-box__quotations">
                                     <div class="container-fluid quotations__container">
-                                        <div class="row container__quotation-single m-top-30">
+                                        <div class="row container__quotation-single m-top-15">
                                             <div class="col-md-1 m-top-10 quotation-single__status">
                                                 <p class="small status--new">New</p>
                                                 <p class="status--date">2nd Oct 2020</p>
                                             </div>
                                             <div class="col-md-3 m-top-10 quotation-single__location">
-                                                <div class="d-flex align-items-center">
-                                                    <p class="regular m-left-5">Wonder Street, Brisbane</p>
-                                                </div>
+                                                <p class="regular m-left-5">Wonder Street, Brisbane</p>
                                             </div>
                                             <div class="col-md-1 d-flex m-top-10 quotation-single__brand">
-                                                <p class="regular">Apple</p>
+                                                <div class="brand--name">
+                                                <p class="apple">Apple</p>
+                                                </div>
                                             </div>
                                             <div class="col-md-6 d-flex flex-wrap quotation-single__issues">
                                                 <div
@@ -173,7 +190,7 @@
                                                 <i
                                                     class="fas m-left-15 fa-chevron-down quotation-single__drop-arrow display-none"></i>
                                             </div>
-                                            <div class="col-md-12 quotation-single__user-details-quote-form">
+                                            <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
                                                 <div class="row">
                                                     <div class="col-7 quotation-single__user-details m-top-15">
                                                         <div
@@ -194,15 +211,15 @@
                                                             </div>
                                                             <div class="row m-top-30">
                                                                 <div class="col-3">
-                                                                    <p>User name:</p>
+                                                                    <p class="bold">User name:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">Sohail Dangol</p>
+                                                                    <p>Sohail Dangol</p>
                                                                 </div>
                                                             </div>
                                                             <div class="row m-top-10">
                                                                 <div class="col-3">
-                                                                    <p>Email:</p>
+                                                                    <p class="bold">Email:</p>
                                                                 </div>
                                                                 <div class="col-8">
                                                                     <p class="bold">Sohail.Dangol130@gmail.com</p>
@@ -210,10 +227,10 @@
                                                             </div>
                                                             <div class="row m-top-10">
                                                                 <div class="col-3">
-                                                                    <p>Phone number:</p>
+                                                                    <p class="bold">Phone number:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">9861282607</p>
+                                                                    <p>9861282607</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -245,18 +262,18 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row container__quotation-single m-top-30">
+                                        <div class="row container__quotation-single m-top-15">
                                             <div class="col-md-1 m-top-10 quotation-single__status">
                                                 <p class="small status--pending">Pending</p>
                                                 <p class="status--date">21st Oct 2020</p>
                                             </div>
                                             <div class="col-md-3 d-flex m-top-10 quotation-single__location">
-                                                <div class="d-flex align-items-center">
-                                                    <p class="regular m-left-5">12th Street Avenue, Melbourne</p>
-                                                </div>
+                                                <p class="regular m-left-5">12th Street Avenue, Melbourne</p>
                                             </div>
                                             <div class="col-md-1 d-flex m-top-10 quotation-single__brand">
-                                                <p class="regular">Samsung</p>
+                                                <div class="brand--name">
+                                                    <p class="lenovo">Lenovo</p>
+                                                </div>
                                             </div>
                                             <div class="col-md-6 d-flex flex-wrap quotation-single__issues">
                                                 <div
@@ -291,7 +308,7 @@
                                                 <i
                                                     class="fas m-left-15 fa-chevron-down quotation-single__drop-arrow"></i>
                                             </div>
-                                            <div class="col-md-12 quotation-single__user-details-quote-form m-top-15">
+                                            <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
                                                 <div class="row">
                                                     <div class="col-7 quotation-single__user-details m-top-15">
                                                         <div
@@ -312,26 +329,26 @@
                                                             </div>
                                                             <div class="row m-top-30">
                                                                 <div class="col-3">
-                                                                    <p>User name:</p>
+                                                                    <p class="bold">User name:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">Sohail Dangol</p>
+                                                                    <p>Sohail Dangol</p>
                                                                 </div>
                                                             </div>
                                                             <div class="row m-top-10">
                                                                 <div class="col-3">
-                                                                    <p>Email:</p>
+                                                                    <p class="bold">Email:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">Sohail.Dangol130@gmail.com</p>
+                                                                    <p>Sohail.Dangol130@gmail.com</p>
                                                                 </div>
                                                             </div>
                                                             <div class="row m-top-10">
                                                                 <div class="col-3">
-                                                                    <p>Phone number:</p>
+                                                                    <p class="bold">Phone number:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">9861282607</p>
+                                                                    <p>9861282607</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -366,18 +383,18 @@
                                                             </div>
                                                             <div class="row m-top-30">
                                                                 <div class="col-3">
-                                                                    <p>Price:</p>
+                                                                    <p class="bold">Price:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">$ 500</p>
+                                                                    <p>$ 500</p>
                                                                 </div>
                                                             </div>
                                                             <div class="row m-top-10">
                                                                 <div class="col-3">
-                                                                    <p>Description:</p>
+                                                                    <p class="bold">Description:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">It is a long established fact that a
+                                                                    <p>It is a long established fact that a
                                                                         reader will be distracted by the readable
                                                                         content of a page when looking at its layout.
                                                                     </p>
@@ -388,18 +405,18 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row container__quotation-single m-top-30">
+                                        <div class="row container__quotation-single m-top-15">
                                             <div class="col-md-1 m-top-10 quotation-single__status">
                                                 <p class="small status--progress">Progress</p>
                                                 <p class="status--date">30th Nov 2020</p>
                                             </div>
                                             <div class="col-md-3 d-flex m-top-10 quotation-single__location">
-                                                <div class="d-flex align-items-center">
-                                                    <p class="regular m-left-5">12th Street Avenue, Melbourne</p>
-                                                </div>
+                                                <p class="regular m-left-5">12th Street Avenue, Melbourne</p>
                                             </div>
                                             <div class="col-md-1 d-flex m-top-10 quotation-single__brand">
-                                                <p class="regular">Samsung</p>
+                                                <div class="brand--name">
+                                                    <p class="regular samsung">Samsung</p>
+                                                </div>
                                             </div>
                                             <div class="col-md-6 d-flex flex-wrap quotation-single__issues">
                                                 <div
@@ -434,7 +451,7 @@
                                                 <i
                                                     class="fas m-left-15 fa-chevron-down quotation-single__drop-arrow"></i>
                                             </div>
-                                            <div class="col-md-12 quotation-single__user-details-quote-form m-top-15">
+                                            <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
                                                 <div class="row">
                                                     <div class="col-7 quotation-single__user-details m-top-15">
                                                         <div
@@ -450,26 +467,26 @@
                                                             </div>
                                                             <div class="row m-top-30">
                                                                 <div class="col-3">
-                                                                    <p>User name:</p>
+                                                                    <p class="bold">User name:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">Sohail Dangol</p>
+                                                                    <p>Sohail Dangol</p>
                                                                 </div>
                                                             </div>
                                                             <div class="row m-top-10">
                                                                 <div class="col-3">
-                                                                    <p>Email:</p>
+                                                                    <p class="bold">Email:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">Sohail.Dangol130@gmail.com</p>
+                                                                    <p>Sohail.Dangol130@gmail.com</p>
                                                                 </div>
                                                             </div>
                                                             <div class="row m-top-10">
                                                                 <div class="col-3">
-                                                                    <p>Phone number:</p>
+                                                                    <p class="bold">Phone number:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">9861282607</p>
+                                                                    <p>9861282607</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -504,18 +521,18 @@
                                                             </div>
                                                             <div class="row m-top-30">
                                                                 <div class="col-3">
-                                                                    <p>Price:</p>
+                                                                    <p class="bold">Price:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">$ 500</p>
+                                                                    <p>$ 500</p>
                                                                 </div>
                                                             </div>
                                                             <div class="row m-top-10">
                                                                 <div class="col-3">
-                                                                    <p>Description:</p>
+                                                                    <p class="bold">Description:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">It is a long established fact that a
+                                                                    <p>It is a long established fact that a
                                                                         reader will be distracted by the readable
                                                                         content of a page when looking at its layout.
                                                                     </p>
@@ -526,19 +543,18 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="row container__quotation-single quotation-single--completed m-top-30 ">
+                                        <div class="row container__quotation-single quotation-single--completed m-top-15">
                                             <div class="col-md-1 m-top-10 quotation-single__status">
                                                 <p class="small status--done">Done</p>
                                                 <p class="status--date">12th June 2020</p>
                                             </div>
                                             <div class="col-md-3 d-flex m-top-10 quotation-single__location">
-                                                <div class="d-flex align-items-center">
-                                                    <p class="regular m-left-5">12th Street Avenue, Melbourne</p>
-                                                </div>
+                                                <p class="regular m-left-5">12th Street Avenue, Melbourne</p>
                                             </div>
                                             <div class="col-md-1 d-flex m-top-10 quotation-single__brand">
-                                                <p class="regular">Samsung</p>
+                                                <div class="brand--name">
+                                                    <p class="alcatel">Alcatel</p>
+                                                    </div>
                                             </div>
                                             <div class="col-md-6 d-flex flex-wrap quotation-single__issues">
                                                 <div
@@ -573,7 +589,7 @@
                                                 <i
                                                     class="fas m-left-15 fa-chevron-down quotation-single__drop-arrow"></i>
                                             </div>
-                                            <div class="col-md-12 quotation-single__user-details-quote-form m-top-15">
+                                            <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
                                                 <div class="row">
                                                     <div class="col-7 quotation-single__user-details m-top-15">
                                                         <div
@@ -643,18 +659,18 @@
                                                             </div>
                                                             <div class="row m-top-30">
                                                                 <div class="col-3">
-                                                                    <p>Price:</p>
+                                                                    <p class="bold">Price:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">$ 500</p>
+                                                                    <p>$ 500</p>
                                                                 </div>
                                                             </div>
                                                             <div class="row m-top-10">
                                                                 <div class="col-3">
-                                                                    <p>Description:</p>
+                                                                    <p class="bold">Description:</p>
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <p class="bold">It is a long established fact that a
+                                                                    <p>It is a long established fact that a
                                                                         reader will be distracted by the readable
                                                                         content of a page when looking at its layout.
                                                                     </p>
@@ -710,6 +726,32 @@
                 $container__quotation_single.remove();
             }
         })
+
+        $('.filter-status__single-status').click(function(){
+            $(this).toggleClass('single-status--not-selected');
+            $(this).toggleClass('single-status--selected');
+
+            var a = $(document).find('.single-status--selected');
+            if (a.length>=1){
+                $('.single-status--clear').removeClass('display-none');
+            }else{
+                $('.single-status--clear').addClass('display-none');
+            }
+        })
+
+
+        $('.single-status--clear').click(function(){
+            var a = $(document).find('.single-status--selected');
+            console.log($(document).find('.single-status--selected'));
+
+            for (var i = 0; i<a.length; i++){
+                $(a[i]).removeClass('single-status--selected');
+                $(a[i]).addClass('single-status--not-selected');
+            }
+
+            $(this).toggleClass('display-none');            
+        })
+
     </script>
 </body>
 

@@ -28,7 +28,7 @@ $primary-black: rgb(0, 0, 0);
 }
 
 .red{
-    color: $primary-red;
+    color: $primary-red !important;
 }
 
 .orange{
@@ -87,7 +87,7 @@ $primary-black: rgb(0, 0, 0);
 // icons
 
 $bg_fingerprint: hsl(348, 100%, 85%);
-$bg_camera: hsl(50, 100%, 85%);
+$bg_camera: hsl(30, 100%, 85%);
 $bg_charging-problem: hsl(200, 100%, 85%);
 $bg_battery: hsl(140, 100%, 85%);
 $bg_headphone-port: hsl(210, 100%, 85%);
@@ -99,18 +99,18 @@ $bg_software: hsl(290, 100%, 85%);
 $bg_speaker: hsl(22, 100%, 85%);
 $bg_water-damage: hsl(260, 100%, 85%);
 
-$text_fingerprint: #FF002B;
-$text_camera: #F0C800;
-$text_charging-problem: #00AAFF;
-$text_battery: #00F050;
-$text_headphone-port: #0080FF;
-$text_microphone: #002BFF;
-$text_screen-protector: #00F0C8;
-$text_screen-replacement: #FF9900;
-$text_screen-unlock: #FF00A8;
-$text_software: #D500FF;
-$text_speaker: #FF5C00;
-$text_water-damage: #5500FF;
+$text_fingerprint: hsl(330, 100%, 30%);
+$text_camera: hsl(30, 100%, 47%);
+$text_charging-problem: hsl(200, 100%, 30%);
+$text_battery: hsl(132, 100%, 47%);
+$text_headphone-port: hsl(210, 100%, 30%);
+$text_microphone: hsl(230, 100%, 30%);
+$text_screen-protector: hsl(170, 100%, 47%);
+$text_screen-replacement: hsl(36, 100%, 30%);
+$text_screen-unlock: hsl(320, 100%, 30%);
+$text_software: hsl(290, 100%, 30%);
+$text_speaker: hsl(22, 100%, 30%);
+$text_water-damage: hsl(260, 100%, 30%);
 
 
 .fingerprint{
@@ -160,4 +160,123 @@ $text_water-damage: #5500FF;
 .water-damage{
     color: $text_water-damage !important;
     background-color: $bg_water-damage !important;
+}
+
+// brands
+
+$bg_alcatel: hsl(348, 100%, 85%);
+$bg_apple:  hsl(328, 100%, 85%);
+$bg_asus:  hsl(308, 100%, 85%);
+$bg_gionee:  hsl(288, 100%, 85%);
+$bg_google:  hsl(268, 100%, 85%);
+$bg_htc:  hsl(248, 100%, 85%);
+$bg_huawei:  hsl(228, 100%, 85%);
+$bg_lenovo:  hsl(208, 100%, 85%);
+$bg_lg:  hsl(188, 100%, 85%);
+$bg_microsoft:  hsl(168, 100%, 85%);
+$bg_motorola:  hsl(148, 100%, 85%);
+$bg_nokia:  hsl(128, 100%, 85%);
+$bg_oneplus:  hsl(108, 100%, 85%);
+$bg_oppo:  hsl(88, 100%, 85%);
+$bg_samsung:  hsl(68, 100%, 85%);
+$bg_sony:  hsl(48, 100%, 85%);
+$bg_vivo:  hsl(28, 100%, 85%);
+$bg_xiaomi:  hsl(8, 100%, 85%);
+$bg_zte:  hsl(358, 100%, 85%);
+
+$text_apple:  hsl(328, 100%, 30%);
+$text_alcatel: hsl(348, 100%, 30%);
+$text_asus:  hsl(308, 100%, 30%);
+$text_gionee:  hsl(288, 100%, 30%);
+$text_google:  hsl(268, 100%, 30%);
+$text_htc:  hsl(248, 100%, 30%);
+$text_huawei:  hsl(228, 100%, 30%);
+$text_lenovo:  hsl(208, 100%, 30%);
+$text_lg:  hsl(188, 100%, 30%);
+$text_microsoft:  hsl(168, 100%, 30%);
+$text_motorola:  hsl(148, 100%, 30%);
+$text_nokia:  hsl(128, 100%, 30%);
+$text_oneplus:  hsl(108, 100%, 30%);
+$text_oppo:  hsl(88, 100%, 30%);
+$text_samsung:  hsl(68, 100%, 30%);
+$text_sony:  hsl(48, 100%, 30%);
+$text_vivo:  hsl(28, 100%, 30%);
+$text_xiaomi:  hsl(8, 100%, 30%);
+$text_zte:  hsl(358, 100%, 30%);
+
+.apple{
+    color: $text_apple;
+    background-color: $bg_apple;
+}
+.alcatel{
+    color: $text_alcatel;
+    background-color: $bg_alcatel;
+}
+.asus{
+    color: $text_asus;
+    background-color: $bg_asus;
+}
+.gionee{
+    color: $text_gionee;
+    background-color: $bg_gionee;
+}
+.google{
+    color: $text_google;
+    background-color: $bg_google;
+}
+.htc{
+    color: $text_htc;
+    background-color: $bg_htc;
+}
+.huawei{
+    color: $text_huawei;
+    background-color: $bg_huawei;
+}
+.lenovo{
+    color: $text_lenovo;
+    background-color: $bg_lenovo;
+}
+.lg{
+    color: $text_lg;
+    background-color: $bg_lg;
+}
+.microsoft{
+    color: $text_microsoft;
+    background-color: $bg_microsoft;
+}
+.motorola{
+    color: $text_motorola;
+    background-color: $bg_motorola;
+}
+.nokia{
+    color: $text_nokia;
+    background-color: $bg_nokia;
+}
+.oneplus{
+    color: $text_oneplus;
+    background-color: $bg_oneplus;
+}
+.oppo{
+    color: $text_oppo;
+    background-color: $bg_oppo;
+}
+.samsung{
+    color: $text_samsung;
+    background-color: $bg_samsung;
+}
+.sony{
+    color: $text_sony;
+    background-color: $bg_sony;
+}
+.vivo{
+    color: $text_vivo;
+    background-color: $bg_vivo;
+}
+.xiaomi{
+    color: $text_xiaomi;
+    background-color: $bg_xiaomi;
+}
+.zte{
+    color: $text_zte;
+    background-color: $bg_zte;
 }
