@@ -67,8 +67,11 @@ $primary-orange: rgb(255, 124, 1);
 }
 
 .bg-orange{
-    background-color: $primary-orange;
-    
+    background-color: $primary-orange !important;  
+}
+
+.bg-grey{
+    background-color: rgb(241, 241, 241) !important;  
 }
 
 

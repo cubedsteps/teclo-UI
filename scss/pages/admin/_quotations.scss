@@ -24,6 +24,19 @@
                                         @extend .orange;
                                         @extend .regular;
                                     }
+                                    .status--progress{
+                                        @extend .green;
+                                        @extend .regular;
+                                    }
+                                    .status--done{
+                                        @extend .blue;
+                                        @extend .regular;
+                                    }
+                                    .status--date{
+                                        position: absolute; 
+                                        width:100%; 
+                                        font-size:10px !important;
+                                    }
                                 }
 
                                 .quotation-single__issues{
@@ -81,6 +94,27 @@
                                     }
                                 }
                             }
+
+                            // .quotation-single--completed{
+                            //     .quotation-single__location{
+                            //         p{
+                            //             @extend .grey;
+                            //         }
+                            //     }
+                            //     .quotation-single__brand{
+                            //         p{
+                            //             @extend .grey;
+                            //         }
+                            //     }
+                            //     .quotation-single__issues{
+                            //         .issues__single-issue{
+                            //             @extend .bg-grey;
+                            //             p{
+                            //                 @extend .grey;
+                            //             }   
+                            //         }                                    
+                            //     }
+                            // }
                         }
                     }
                 }
