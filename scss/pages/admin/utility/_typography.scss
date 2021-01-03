@@ -4,7 +4,7 @@ $admin-font: 'Open Sans', sans-serif;
 #admin{
 
     .bold{
-        font-weight: 700;
+        font-weight: 700 !important;
     }
 
     .regular{
@@ -14,8 +14,15 @@ $admin-font: 'Open Sans', sans-serif;
     .light{
         font-weight: 300;
     }
-    h1,h2,h3,h4,h5,h6,p{
+    h1,h2,h3,h4,h5,h6,p,a{
         margin: 0;
+    }
+    a{
+        @extend .black;
+    }
+    a:hover{
+        text-decoration: none;
+        @extend .bold;
     }
     h1{
         font-size: 40px !important;
@@ -41,7 +48,7 @@ $admin-font: 'Open Sans', sans-serif;
         font-size: 16px !important;
     }
 
-    p{
+    p,a{
         font-size: 14px !important;
     }
 

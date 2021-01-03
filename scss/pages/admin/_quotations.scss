@@ -1,0 +1,166 @@
+#admin{
+    #body{
+        #quotations{ 
+            .quotations__main-container{
+                padding: 30px;
+                border-radius: 20px;
+                    -webkit-box-shadow: 0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+                    -moz-box-shadow:    0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+                    box-shadow:         0px 0px 30px 0px rgba(213, 215, 246, 0.4);
+                .main-container__all-quotations-box{
+                    overflow-x: hidden;
+                    .all-quotations-box__filter-status{
+                        .filter-status__single-status{
+                            padding: 5px 15px; 
+                            border-radius:5px; 
+                            cursor: pointer;  
+                            transition: 0.5s all;
+                            @extend .black;
+                            @extend .m-left-15;    
+                            &:first-child{
+                                margin-left: 0 !important;
+                            }   
+                            &:last-child{
+                                border-left: 1px solid #d1d1d1;
+                                border-radius: 0px
+                            }
+                            p{
+                                @extend .small;
+                            }
+                        }
+                        
+                        .single-status--selected{
+                            @extend .bg-blue;
+                            @extend .white;
+                        }
+
+                        .single-status--not-selected:hover{
+                            @extend .bg-faded-blue;
+                        }
+                    }
+                    .all-quotations-box__quotations{
+                        .quotations__container{
+                            .container__quotation-single{
+                                border-bottom: 1px solid rgb(204, 204, 204);
+                                padding-bottom: 15px;
+
+                                &:last-child{
+                                    border-bottom: none;
+                                }
+
+                                .quotation-single__status{
+                                    .status--new{
+                                        @extend .red;
+                                        @extend .regular;
+                                    }
+                                    .status--pending{
+                                        @extend .orange;
+                                        @extend .regular;
+                                    }
+                                    .status--progress{
+                                        @extend .green;
+                                        @extend .regular;
+                                    }
+                                    .status--done{
+                                        @extend .blue;
+                                        @extend .regular;
+                                    }
+                                    .status--date{
+                                        position: absolute; 
+                                        width:100%; 
+                                        font-size:10px !important;
+                                    }
+                                }
+
+                                .quotation-single__issues{
+                                    .issues__single-issue{
+                                        padding: 5px; 
+                                        padding-right:10px; 
+                                        border-radius:20px;
+                                        @extend .m-top-5;
+                                        @extend .m-btm-5;
+                                        @extend .m-left-5;
+
+                                        &:first-child{
+                                            margin-left: 0px !important;
+                                        }
+
+                                        .single-issue__text{
+                                            @extend .m-left-5;
+                                            @extend .small;
+                                            @extend .bold;
+                                        }
+                                    }                                    
+                                }
+
+                                .quotation-single__brand{
+                                    .brand--name{
+                                        p{
+                                            @extend .bold;
+                                            @extend .small;
+                                            padding: 5px 10px;
+                                            border-radius: 5px;
+                                        }
+                                    }
+                                }
+                                
+                                .quotation-single__accept-delete-drop-arrow{
+                                    .quotation-single__accept,.quotation-single__drop-arrow{
+                                        @extend .blue;
+                                    }
+                                    .quotation-single__delete{
+                                        @extend .red;
+                                    }                                    
+                                    .quotation-single__delete, .quotation-single__accept,.quotation-single__drop-arrow{
+                                        transition: 0.2s all;
+                                        transform-origin: center;
+                                        &:hover{
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                }
+
+                                .form-container--input-text{
+                                    height: 35px !important;
+                                }
+
+                                .form-container--button{
+                                    width: 100%;
+                                }
+
+                                .quotation-single__user-details-quote-form{
+                                    .quotation-single__user-details{
+                                        .user-details__no-details{
+                                            height: 100%; width:100%
+                                        }
+                                    }
+                                }
+                            }
+
+                            // .quotation-single--completed{
+                            //     .quotation-single__location{
+                            //         p{
+                            //             @extend .grey;
+                            //         }
+                            //     }
+                            //     .quotation-single__brand{
+                            //         p{
+                            //             @extend .grey;
+                            //         }
+                            //     }
+                            //     .quotation-single__issues{
+                            //         .issues__single-issue{
+                            //             @extend .bg-grey;
+                            //             p{
+                            //                 @extend .grey;
+                            //             }   
+                            //         }                                    
+                            //     }
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

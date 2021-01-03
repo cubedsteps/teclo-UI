@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Services</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- bootstrap slider -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css"
+        integrity="sha512-3q8fi8M0VS+X/3n64Ndpp6Bit7oXSiyCnzmlx6IDBLGlY5euFySyJ46RUlqIVs0DPCGOypqP8IRk/EyPvU28mQ=="
+        crossorigin="anonymous" />
+
+    <!-- aniamte.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body id="admin">
+    <div id="admin__quotations-page" class="container-fluid">
+        <div class="row">
+            <div id="nav" class="col-md-2 col-0">
+                <div class="container" style="position: relative;">
+                    <a href="#">
+                        <div class="nav__logo-burger d-flex justify-content-between align-items-center">
+                            <h3 class="bold">Telcohub</h3>
+                            <i class="fas fa-bars nav__burger"></i>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="row nav__item align-items-center">
+                            <i class="fas fa-th-large col-3"></i>
+                            <p class="col-9">Dashboard</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="row nav__item align-items-center nav-active">
+                            <div class="total-quotations d-flex justify-content-center align-items-center">
+                                <p>1</p>
+                            </div>
+                            <i class="fas fa-file-invoice-dollar col-3"></i>
+                            <p class="col-9">Quotations</p>
+                        </div>
+                    </a>
+
+                    <a href="brands.html">
+                        <div class="row nav__item align-items-center">
+                            <i class="fas fa-mobile col-3"></i>
+                            <p class="col-9">Brands</p>
+                        </div>
+                    </a>
+
+                    <a href="services.html">
+                        <div class="row nav__item align-items-center">
+                            <i class="fas fa-cogs col-3"></i>
+                            <p class="col-9">Services</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="row nav__item align-items-center">
+                            <i class="fas fa-sliders-h col-3"></i>
+                            <p class="col-9">Settings</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="body" class="col-md-10 col-12 m-btm-30">
+                <div class="row">
+                    <div id="header" class="col-12">
+                        <div class="container-fluid d-flex align-items-center m-top-15">
+                            <div class="header__nav-burger m-right-30">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <div class="header__notification-profile d-flex align-items-center">
+                                <div class="header__notification m-right-30">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <div class="header__profile">
+                                    <div class="profile-image" style="background-image: url('/assets/img/wrench.jpg');">
+                                    </div>
+                                    <div class="profile-box m-top-15 display-none">
+                                        <div class="profile-box--item">
+                                            <a class="" href="#">
+                                                View profile
+                                            </a>
+                                        </div>
+                                        <div class="profile-box--item">
+                                            <a href="#" class="red">
+                                                Logout
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="quotations" class="col-12 m-top-30">
+                        <div class="quotations__main-container">
+                            <div class="main-container__heading">
+                                <h1 class="bold">Quotations</h1>
+                                <p class="m-left-5">Your work station.</p>
+                            </div>
+                            <div class="main-container__all-quotations-box">
+                                <div class="d-flex align-items-center m-top-30 all-quotations-box__filter-status">
+                                    <div>
+                                        <p>Filter by:</p>
+                                    </div>
+                                    <div class="single-status--not-selected filter-status__single-status">
+                                        <p>New</p>
+                                    </div>
+                                    <div class="filter-status__single-status single-status--not-selected">
+                                        <p>Pending</p>
+                                    </div>
+                                    <div class="filter-status__single-status single-status--not-selected">
+                                        <p>Progress</p>
+                                    </div>
+                                    <div class="filter-status__single-status single-status--not-selected">
+                                        <p>Done</p>
+                                    </div>
+                                    <div class="filter-status__single-status single-status--clear display-none">
+                                        <p>Clear all</p>
+                                    </div>
+                                </div>
+                                <div class="row m-top-30 all-quotations-box__labels">
+                                    <div class="col-1">
+                                        <p class="small">Status</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <p class="small">Location</p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="small">Brand</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="small">Issues</p>
+                                    </div>
+                                </div>
+                                <div class="row all-quotations-box__quotations">
+                                    <div class="container-fluid quotations__container">
+                                        <div class="row container__quotation-single m-top-15">
+                                            <div class="col-md-1 m-top-10 quotation-single__status">
+                                                <p class="small status--new">New</p>
+                                                <p class="status--date">2nd Oct 2020</p>
+                                            </div>
+                                            <div class="col-md-3 m-top-10 quotation-single__location">
+                                                <p class="regular m-left-5">Wonder Street, Brisbane</p>
+                                            </div>
+                                            <div class="col-md-1 d-flex m-top-10 quotation-single__brand">
+                                                <div class="brand--name">
+                                                <p class="apple">Apple</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 d-flex flex-wrap quotation-single__issues">
+                                                <div
+                                                    class="d-flex align-items-center screen-replacement issues__single-issue">
+                                                    <div
+                                                        class="single-issue__icon d-flex align-items-center justify-content-center">
+                                                        <img src="/assets/img/icons/Screen_replacement.svg">
+                                                    </div>
+                                                    <p class="single-issue__text">Screen Replacement</p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center charging-problem issues__single-issue">
+                                                    <div
+                                                        class="single-issue__icon d-flex align-items-center justify-content-center">
+                                                        <img src="/assets/img/icons/Charging_problem.svg">
+                                                    </div>
+                                                    <p class="single-issue__text">Charging Problem</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-md-1 d-flex justify-content-center m-top-10 quotation-single__accept-delete-drop-arrow">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fas fa-check quotation-single__accept"></i>
+                                                    <i class="fas fa-times m-left-15 quotation-single__delete"></i>
+                                                </div>
+                                                <i
+                                                    class="fas m-left-15 fa-chevron-down quotation-single__drop-arrow display-none"></i>
+                                            </div>
+                                            <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
+                                                <div class="row">
+                                                    <div class="col-7 quotation-single__user-details">
+                                                        <div
+                                                            class="user-details__no-details d-flex align-items-center justify-content-center">
+                                                            <div>
+                                                                <img src="/assets/img/no-user-details.png"
+                                                                    style="width: 200px;" class="mx-auto d-block"
+                                                                    alt="">
+                                                                <p class="m-top-15">User details will be available only
+                                                                    after they accept your quote!</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-details__all-details display-none">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 class="bold">User details</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-30">
+                                                                <div class="col-3">
+                                                                    <p class="bold">User name:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>Sohail Dangol</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-10">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Email:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p class="bold">Sohail.Dangol130@gmail.com</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-10">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Phone number:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>9861282607</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <form class="col-5 quotation-single__quote-form-container">
+                                                        <div class="m-top-15 quote-form-container__price-estimation">
+                                                            <p>Your estimation</p>
+                                                            <div class="d-flex align-items-center m-top-5">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text">$</div>
+                                                                    </div>
+                                                                    <input style="outline: none !important;" type="text"
+                                                                        class="form-control" id="inlineFormInputGroup">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="m-top-15 quote-form-container__description">
+                                                            <p>Description</p>
+                                                            <textarea class="form-container--textarea m-top-5" maxlength = "150"></textarea>
+                                                        </div>
+                                                        <div class="m-top-15 quote-form-container__send-btn">
+                                                            <button class="form-container--button send-btn">
+                                                                <p>Send</p>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row container__quotation-single m-top-15">
+                                            <div class="col-md-1 m-top-10 quotation-single__status">
+                                                <p class="small status--pending">Pending</p>
+                                                <p class="status--date">21st Oct 2020</p>
+                                            </div>
+                                            <div class="col-md-3 d-flex m-top-10 quotation-single__location">
+                                                <p class="regular m-left-5">12th Street Avenue, Melbourne</p>
+                                            </div>
+                                            <div class="col-md-1 d-flex m-top-10 quotation-single__brand">
+                                                <div class="brand--name">
+                                                    <p class="lenovo">Lenovo</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 d-flex flex-wrap quotation-single__issues">
+                                                <div
+                                                    class="d-flex align-items-center screen-replacement issues__single-issue">
+                                                    <div
+                                                        class="single-issue__icon d-flex align-items-center justify-content-center">
+                                                        <img src="/assets/img/icons/Screen_replacement.svg">
+                                                    </div>
+                                                    <p class="single-issue__text">Screen Replacement</p>
+                                                </div>
+                                                <div class="d-flex align-items-center software issues__single-issue">
+                                                    <div
+                                                        class="single-issue__icon d-flex align-items-center justify-content-center">
+                                                        <img src="/assets/img/icons/Software.svg">
+                                                    </div>
+                                                    <p class="single-issue__text">Software</p>
+                                                </div>
+                                                <div class="d-flex align-items-center microphone issues__single-issue">
+                                                    <div
+                                                        class="single-issue__icon d-flex align-items-center justify-content-center">
+                                                        <img src="/assets/img/icons/microphone.svg">
+                                                    </div>
+                                                    <p class="single-issue__text">Microphone</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-md-1 d-flex justify-content-center m-top-10 quotation-single__accept-delete-drop-arrow">
+                                                <div class="d-flex justify-content-center display-none">
+                                                    <i class="fas fa-check quotation-single__accept"></i>
+                                                    <i class="fas fa-times m-left-15 quotation-single__delete"></i>
+                                                </div>
+                                                <i
+                                                    class="fas m-left-15 fa-chevron-down quotation-single__drop-arrow"></i>
+                                            </div>
+                                            <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
+                                                <div class="row">
+                                                    <div class="col-7 quotation-single__user-details">
+                                                        <div
+                                                            class="user-details__no-details d-flex align-items-center justify-content-center">
+                                                            <div>
+                                                                <img src="/assets/img/no-user-details.png"
+                                                                    style="width: 200px;" class="mx-auto d-block"
+                                                                    alt="">
+                                                                <p class="m-top-15">User details will be available only
+                                                                    after they accept your quote!</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-details__all-details display-none">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 class="bold">User details</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-30">
+                                                                <div class="col-3">
+                                                                    <p class="bold">User name:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>Sohail Dangol</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-10">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Email:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>Sohail.Dangol130@gmail.com</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-10">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Phone number:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>9861282607</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <form
+                                                        class="col-5 quotation-single__quote-form-container display-none">
+                                                        <div class="m-top-15 quote-form-container__price-estimation">
+                                                            <p>Your estimation</p>
+                                                            <div class="d-flex align-items-center m-top-5">
+                                                                <p>$</p>
+                                                                <input type="text"
+                                                                    class="form-container--input-text m-left-15" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="m-top-15 quote-form-container__description">
+                                                            <p>Description</p>
+                                                            <textarea
+                                                                class="form-container--textarea m-top-5" maxlength = "150"></textarea>
+                                                        </div>
+                                                        <div class="m-top-15 quote-form-container__send-btn">
+                                                            <button class="form-container--button send-btn">
+                                                                <p>Send</p>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="col-5 quotation-single__quote-details">
+                                                        <div class="quote-details__all-details">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 class="bold">Quote details</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-30">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Price:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>$ 500</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-10">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Description:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>It is a long established fact that a
+                                                                        reader will be distracted by the readable
+                                                                        content of a page when looking at its layout.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row container__quotation-single m-top-15">
+                                            <div class="col-md-1 m-top-10 quotation-single__status">
+                                                <p class="small status--progress">Progress</p>
+                                                <p class="status--date">30th Nov 2020</p>
+                                            </div>
+                                            <div class="col-md-3 d-flex m-top-10 quotation-single__location">
+                                                <p class="regular m-left-5">12th Street Avenue, Melbourne</p>
+                                            </div>
+                                            <div class="col-md-1 d-flex m-top-10 quotation-single__brand">
+                                                <div class="brand--name">
+                                                    <p class="regular samsung">Samsung</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 d-flex flex-wrap quotation-single__issues">
+                                                <div
+                                                    class="d-flex align-items-center screen-replacement issues__single-issue">
+                                                    <div
+                                                        class="single-issue__icon d-flex align-items-center justify-content-center">
+                                                        <img src="/assets/img/icons/Screen_replacement.svg">
+                                                    </div>
+                                                    <p class="single-issue__text">Screen Replacement</p>
+                                                </div>
+                                                <div class="d-flex align-items-center software issues__single-issue">
+                                                    <div
+                                                        class="single-issue__icon d-flex align-items-center justify-content-center">
+                                                        <img src="/assets/img/icons/Software.svg">
+                                                    </div>
+                                                    <p class="single-issue__text">Software</p>
+                                                </div>
+                                                <div class="d-flex align-items-center microphone issues__single-issue">
+                                                    <div
+                                                        class="single-issue__icon d-flex align-items-center justify-content-center">
+                                                        <img src="/assets/img/icons/microphone.svg">
+                                                    </div>
+                                                    <p class="single-issue__text">Microphone</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-md-1 d-flex justify-content-center m-top-10 quotation-single__accept-delete-drop-arrow">
+                                                <div class="d-flex justify-content-center display-none">
+                                                    <i class="fas fa-check quotation-single__accept"></i>
+                                                    <i class="fas fa-times m-left-15 quotation-single__delete"></i>
+                                                </div>
+                                                <i
+                                                    class="fas m-left-15 fa-chevron-down quotation-single__drop-arrow"></i>
+                                            </div>
+                                            <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
+                                                <div class="row">
+                                                    <div class="col-7 quotation-single__user-details">
+                                                        <div
+                                                            class="user-details__no-details d-flex align-items-center justify-content-center display-none">
+                                                            <p>User details will be available only after they accept
+                                                                your quote!</p>
+                                                        </div>
+                                                        <div class="user-details__all-details">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 class="bold">User details</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-30">
+                                                                <div class="col-3">
+                                                                    <p class="bold">User name:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>Sohail Dangol</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-10">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Email:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>Sohail.Dangol130@gmail.com</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-10">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Phone number:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>9861282607</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <form
+                                                        class="col-5 quotation-single__quote-form-container display-none">
+                                                        <div class="m-top-15 quote-form-container__price-estimation">
+                                                            <p>Your estimation</p>
+                                                            <div class="d-flex align-items-center m-top-5">
+                                                                <p>$</p>
+                                                                <input type="text"
+                                                                    class="form-container--input-text m-left-15" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="m-top-15 quote-form-container__description">
+                                                            <p>Description</p>
+                                                            <textarea
+                                                                class="form-container--textarea m-top-5" maxlength = "150"></textarea>
+                                                        </div>
+                                                        <div class="m-top-15 quote-form-container__send-btn">
+                                                            <button class="form-container--button send-btn">
+                                                                <p>Send</p>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="col-5 quotation-single__quote-details">
+                                                        <div class="quote-details__all-details">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 class="bold">Quote details</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-30">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Price:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>$ 500</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-10">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Description:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>It is a long established fact that a
+                                                                        reader will be distracted by the readable
+                                                                        content of a page when looking at its layout.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row container__quotation-single quotation-single--completed m-top-15">
+                                            <div class="col-md-1 m-top-10 quotation-single__status">
+                                                <p class="small status--done">Done</p>
+                                                <p class="status--date">12th June 2020</p>
+                                            </div>
+                                            <div class="col-md-3 d-flex m-top-10 quotation-single__location">
+                                                <p class="regular m-left-5">12th Street Avenue, Melbourne</p>
+                                            </div>
+                                            <div class="col-md-1 d-flex m-top-10 quotation-single__brand">
+                                                <div class="brand--name">
+                                                    <p class="alcatel">Alcatel</p>
+                                                    </div>
+                                            </div>
+                                            <div class="col-md-6 d-flex flex-wrap quotation-single__issues">
+                                                <div
+                                                    class="d-flex align-items-center screen-replacement issues__single-issue">
+                                                    <div
+                                                        class="single-issue__icon d-flex align-items-center justify-content-center">
+                                                        <img src="/assets/img/icons/Screen_replacement.svg">
+                                                    </div>
+                                                    <p class="single-issue__text">Screen Replacement</p>
+                                                </div>
+                                                <div class="d-flex align-items-center software issues__single-issue">
+                                                    <div
+                                                        class="single-issue__icon d-flex align-items-center justify-content-center">
+                                                        <img src="/assets/img/icons/Software.svg">
+                                                    </div>
+                                                    <p class="single-issue__text">Software</p>
+                                                </div>
+                                                <div class="d-flex align-items-center microphone issues__single-issue">
+                                                    <div
+                                                        class="single-issue__icon d-flex align-items-center justify-content-center">
+                                                        <img src="/assets/img/icons/microphone.svg">
+                                                    </div>
+                                                    <p class="single-issue__text">Microphone</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-md-1 d-flex justify-content-center m-top-10 quotation-single__accept-delete-drop-arrow">
+                                                <div class="d-flex justify-content-center display-none">
+                                                    <i class="fas fa-check quotation-single__accept"></i>
+                                                    <i class="fas fa-times m-left-15 quotation-single__delete"></i>
+                                                </div>
+                                                <i
+                                                    class="fas m-left-15 fa-chevron-down quotation-single__drop-arrow"></i>
+                                            </div>
+                                            <div class="col-md-12 quotation-single__user-details-quote-form m-top-30">
+                                                <div class="row">
+                                                    <div class="col-7 quotation-single__user-details">
+                                                        <div
+                                                            class="user-details__no-details d-flex align-items-center justify-content-center display-none">
+                                                            <p>User details will be available only after they accept
+                                                                your quote!</p>
+                                                        </div>
+                                                        <div class="user-details__all-details">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 class="bold">User details</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-30">
+                                                                <div class="col-3">
+                                                                    <p class="bold">User name:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>Sohail Dangol</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-10">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Email:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>Sohail.Dangol130@gmail.com</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-10">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Phone number:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>9861282607</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <form
+                                                        class="col-5 quotation-single__quote-form-container display-none">
+                                                        <div class="m-top-15 quote-form-container__price-estimation">
+                                                            <p>Your estimation</p>
+                                                            <div class="d-flex align-items-center m-top-5">
+                                                                <p>$</p>
+                                                                <input type="text"
+                                                                    class="form-container--input-text m-left-15" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="m-top-15 quote-form-container__description">
+                                                            <p>Description</p>
+                                                            <textarea
+                                                                class="form-container--textarea m-top-5" maxlength = "150"></textarea>
+                                                        </div>
+                                                        <div class="m-top-15 quote-form-container__send-btn">
+                                                            <button class="form-container--button send-btn">
+                                                                <p>Send</p>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="col-5 quotation-single__quote-details">
+                                                        <div class="quote-details__all-details">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 class="bold">Quote details</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-30">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Price:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>$ 500</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-top-10">
+                                                                <div class="col-3">
+                                                                    <p class="bold">Description:</p>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <p>It is a long established fact that a
+                                                                        reader will be distracted by the readable
+                                                                        content of a page when looking at its layout.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="row">footer</div>
+    </div>
+
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js"
+        integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"
+        integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA=="
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/admin/responsive-nav.js"></script>
+
+    <script>
+        $('.quote-form-container__send-btn button').click(function (e) {
+            e.preventDefault();
+        });
+
+        $('.quotation-single__user-details-quote-form').hide();
+        $('.quotation-single__accept').click(function () {
+            $(this).parent().parent().parent().find('.quotation-single__user-details-quote-form').slideToggle();
+        })
+        $('.quotation-single__drop-arrow').click(function () {
+            $(this).parent().parent().find('.quotation-single__user-details-quote-form').slideToggle();
+        })
+
+        $('.filter-status__single-status').click(function(){
+            $(this).toggleClass('single-status--not-selected');
+            $(this).toggleClass('single-status--selected');
+
+            var a = $(document).find('.single-status--selected');
+            if (a.length>=1){
+                $('.single-status--clear').removeClass('display-none');
+            }else{
+                $('.single-status--clear').addClass('display-none');
+            }
+        })
+
+
+        $('.single-status--clear').click(function(){
+            var a = $(document).find('.single-status--selected');
+            console.log($(document).find('.single-status--selected'));
+
+            for (var i = 0; i<a.length; i++){
+                $(a[i]).removeClass('single-status--selected');
+                $(a[i]).addClass('single-status--not-selected');
+            }
+
+            $(this).toggleClass('display-none');            
+        })
+
+    </script>
+</body>
+
+</html>

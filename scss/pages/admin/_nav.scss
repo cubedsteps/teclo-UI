@@ -84,13 +84,21 @@
             }
         }
         .nav-active{
+            .total-quotations{
+                p{
+                    color: white !important;
+                }
+            }
+            
             i,p{
                 @extend .blue;
             }
 
             p{
-                font-weight: bold;
+                @extend .bold;
             }
+
+            
         }
 
         .nav-active::before{
@@ -105,7 +113,7 @@
         .nav-active:hover{
             &::before{
                 @extend .bg-white;
-                opacity: 0.8;
+                opacity: 1;
             }
         }
     }
