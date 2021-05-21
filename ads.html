@@ -34,6 +34,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+
+
   <!-- select2 -->
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
   
@@ -96,11 +99,285 @@
   </header><!-- End Header -->
 
   <div id="ads">
-      <div class="container ads__main-container">
+      <div class="container-fluid ads__main-container">
         <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-9">
-            
+          <div class="main-container__ads-filter col-md-3 col-sm-12">
+            <div class="ads-filter d-flex">
+              <h5><b>Filter</b></h5>
+              <div class="ads-filter__price-range">
+                <p class="small"><b>Price range</b></p>
+                <input 
+                id="price-range" type="text" class="span2" 
+                value="" 
+                data-slider-min="10" data-slider-max="1000" 
+                data-slider-step="5" data-slider-value="[250,450]"/>
+              </div>
+              <div class="ads-filter__network">
+                <p class="small"><b>Network</b></p>
+                <select name="" id="" class="form-container--select">
+                  <option value="Select network">Select network</option>
+                </select>
+              </div>
+              <div class="ads-filter__subscription">
+                <p class="small"><b>Subscription type</b></p>
+                <select name="" id="" class="form-container--select">
+                  <option value="Select network">Select type</option>
+                </select>
+              </div>
+              <div class="ads-filter__quotas">
+                <p class="small"><b>Quota</b></p>
+                <div class="row">
+                  <div class="col-6 d-flex m-btm-5 align-items-center">
+                    <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                    <p class="m-left-15"><small>SMS</small></p>
+                  </div>
+                  <div class="col-6 d-flex m-btm-5 align-items-center">
+                    <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                    <p class="m-left-15"><small>Data</small></p>
+                  </div>
+                  <div class="col-6 d-flex m-btm-5 align-items-center">
+                    <input type="checkbox" class="form-container--input-checkbox" name="" id="">
+                    <p class="m-left-15"><small>Call</small></p>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="ads-filter__button btn form-container--button white m-btm-30">Filter</button>
+            </div>
+          </div>
+          <div class="main-container__ads-container col-md-9 col-sm-12">
+            <div class="ads-container__heading d-flex align-items-center justify-content-between">
+              <h3>Plans</h3>
+              <div class="heading__filter d-flex align-items-center">
+                <p class="filter__title small">Sort by:</p>
+                <select name="" id="" class="filter__select form-container--select">
+                  <option value="">Price</option>
+                  <option value="">Price</option>
+                  <option value="">Price</option>
+                  <option value="">Price</option>
+                </select>
+              </div>
+            </div>
+            <div class="ads-container__all-ads container-fluid d-flex">
+              <div class="all-ads__single-ad row">
+                <div class="single-ad__left-column d-flex col-md-4">
+                  <div class="left-column__provider">
+                    <div class="provider__image">
+                      <img src="assets/img/Service provider/dodo.png" alt="">
+                    </div>
+                    <h5 class="provider__name">Dodo Sim</h5>
+                  </div>
+                  <div class="left-column__tags d-flex">
+                    <div class="tag tag--prepaid">
+                      <p class="small tag__text">Prepaid</p>
+                    </div>
+                    <div class="tag tag--occasional">
+                      <p class="small tag__text">Ocasional</p>
+                    </div>
+                    <div class="tag tag--network-type">
+                      <p class="small tag__text">Optus 3G + 4G</p>
+                    </div>
+                    <!-- <div class="tag tag--monthly-sub"></div>
+                    <div class="tag tag--annual-pay"></div>
+                    <div class="tag tag--no-contract"></div>
+                    <div class="tag tag--data-plan"></div>
+                    <div class="tag tag--regular"></div>
+                    <div class="tag tag--business"></div>
+                    <div class="tag tag--rural"></div> -->
+                  </div>
+                  <div class="left-column__description">
+                    <ul class="description__list d-flex">
+                      <li class="small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </li>
+                      <li class="small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </li>
+                      <li class="small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="single-ad__right-column col-md-8">
+                  <div class="right-column__price d-flex justify-content-end align-items-center">
+                    <h6 class="price">$15 /month</h6>
+                    <button class="price__visit-btn btn btn-primary">Visit site</button>
+                  </div>
+                  <div class="right-column__offers d-flex justify-content-between">
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <img src="assets/img/phone.png" alt="">
+                      </div>
+                      <p class="offer__text">Get an free Iphone X on purchase</p>
+                    </div>
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <object data="assets/img/icons/message.svg" type=""></object>
+                      </div>
+                      <p class="offer__text">Unlimited texts</p>
+                    </div>
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <object data="assets/img/icons/call.svg" type=""></object>
+                      </div>
+                      <p class="offer__text">2000 minutes phone call</p>
+                    </div>
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <object data="assets/img/icons/data.svg" type=""></object>
+                      </div>
+                      <p class="offer__text">15GB bonus data</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="all-ads__single-ad row">
+                <div class="single-ad__left-column d-flex col-md-4">
+                  <div class="left-column__provider">
+                    <div class="provider__image">
+                      <img src="assets/img/Service provider/dodo.png" alt="">
+                    </div>
+                    <h5 class="provider__name">Dodo Sim</h5>
+                  </div>
+                  <div class="left-column__tags d-flex">
+                    <div class="tag tag--prepaid">
+                      <p class="small tag__text">Prepaid</p>
+                    </div>
+                    <div class="tag tag--occasional">
+                      <p class="small tag__text">Ocasional</p>
+                    </div>
+                    <div class="tag tag--network-type">
+                      <p class="small tag__text">Optus 3G + 4G</p>
+                    </div>
+                    <!-- <div class="tag tag--monthly-sub"></div>
+                    <div class="tag tag--annual-pay"></div>
+                    <div class="tag tag--no-contract"></div>
+                    <div class="tag tag--data-plan"></div>
+                    <div class="tag tag--regular"></div>
+                    <div class="tag tag--business"></div>
+                    <div class="tag tag--rural"></div> -->
+                  </div>
+                  <div class="left-column__description">
+                    <ul class="description__list d-flex">
+                      <li class="small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </li>
+                      <li class="small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </li>
+                      <li class="small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="single-ad__right-column col-md-8">
+                  <div class="right-column__price d-flex justify-content-end align-items-center">
+                    <h6 class="price">$15 /month</h6>
+                    <button class="price__visit-btn btn btn-primary">Visit site</button>
+                  </div>
+                  <div class="right-column__offers d-flex justify-content-between">
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <img src="assets/img/phone.png" alt="">
+                      </div>
+                      <p class="offer__text">Get an free Iphone X on purchase</p>
+                    </div>
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <object data="assets/img/icons/message.svg" type=""></object>
+                      </div>
+                      <p class="offer__text">Unlimited texts</p>
+                    </div>
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <object data="assets/img/icons/call.svg" type=""></object>
+                      </div>
+                      <p class="offer__text">2000 minutes phone call</p>
+                    </div>
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <object data="assets/img/icons/data.svg" type=""></object>
+                      </div>
+                      <p class="offer__text">15GB bonus data</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="all-ads__single-ad row">
+                <div class="single-ad__left-column d-flex col-md-4">
+                  <div class="left-column__provider">
+                    <div class="provider__image">
+                      <img src="assets/img/Service provider/dodo.png" alt="">
+                    </div>
+                    <h5 class="provider__name">Dodo Sim</h5>
+                  </div>
+                  <div class="left-column__tags d-flex">
+                    <div class="tag tag--prepaid">
+                      <p class="small tag__text">Prepaid</p>
+                    </div>
+                    <div class="tag tag--occasional">
+                      <p class="small tag__text">Ocasional</p>
+                    </div>
+                    <div class="tag tag--network-type">
+                      <p class="small tag__text">Optus 3G + 4G</p>
+                    </div>
+                    <!-- <div class="tag tag--monthly-sub"></div>
+                    <div class="tag tag--annual-pay"></div>
+                    <div class="tag tag--no-contract"></div>
+                    <div class="tag tag--data-plan"></div>
+                    <div class="tag tag--regular"></div>
+                    <div class="tag tag--business"></div>
+                    <div class="tag tag--rural"></div> -->
+                  </div>
+                  <div class="left-column__description">
+                    <ul class="description__list d-flex">
+                      <li class="small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </li>
+                      <li class="small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </li>
+                      <li class="small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="single-ad__right-column col-md-8">
+                  <div class="right-column__price d-flex justify-content-end align-items-center">
+                    <h6 class="price">$15 /month</h6>
+                    <button class="price__visit-btn btn btn-primary">Visit site</button>
+                  </div>
+                  <div class="right-column__offers d-flex justify-content-between">
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <img src="assets/img/phone.png" alt="">
+                      </div>
+                      <p class="offer__text">Get an free Iphone X on purchase</p>
+                    </div>
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <object data="assets/img/icons/message.svg" type=""></object>
+                      </div>
+                      <p class="offer__text">Unlimited texts</p>
+                    </div>
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <object data="assets/img/icons/call.svg" type=""></object>
+                      </div>
+                      <p class="offer__text">2000 minutes phone call</p>
+                    </div>
+                    <div class="offer">
+                      <div class="offer__image d-flex align-items-end justify-content-center">
+                        <object data="assets/img/icons/data.svg" type=""></object>
+                      </div>
+                      <p class="offer__text">15GB bonus data</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>          
       </div>
@@ -164,18 +441,7 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <!-- <div id="preloader"></div> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
